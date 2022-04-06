@@ -1,3 +1,73 @@
 
 @import url("reset.css");
 
+body{
+    font-family: "微軟正黑體";
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* -------------------------- header -------------------------- */
+.wrapper header{
+    height: 55px;
+    margin-top: 40px;
+    /* border: 1px solid #000; */
+
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-bottom: 1px solid #808080;
+}
+
+/* logo */
+.wrapper header .logo{
+    display: block;
+    width: 160px;
+    /* border: 1px solid #000; */
+    align-self: flex-start;
+}
+
+.wrapper header img{
+    width: 100%;
+    display: block;
+}
+
+/* 主選單 */
+
+.wrapper nav{
+    width: 715px;
+    margin-left: auto;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.wrapper ul{
+    display: flex;
+    width: 715px;
+    height: 18px;
+    /* border: 1px solid #000; */
+}
+
+.wrapper li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #808080;
+}
+
+.wrapper li{
+    /* border: 1px solid #000; */
+    flex-grow: 1;
+    text-align: center;
+    background-image: url("../img/icon_sprite-04.png");
+    background-repeat: no-repeat;
+    
+}
+
+.wrapper li:nth-child(2){ background-position: 0 -20px; }
+.wrapper li:nth-child(3){ background-position: 0 -40px; }
+.wrapper li:nth-child(4){ background-position: 0 -60px; }
+.wrapper li:nth-child(5){ background-position: 0 -80px; }
+.wrapper li:nth-child(6){ background-position: 0 -100px; }
