@@ -29,6 +29,50 @@ h3{
     font-size: 60px;
 }
 
+a{
+    display: block;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+.subtitle {
+    width: 250px;
+    margin: 60px auto;
+    
+}
+
+.subtitle h2{
+    line-height: 80px;
+    position: relative;
+}
+
+.subtitle h2::before{
+    display: block;
+    content: "";
+    width: 250px;
+    height: 50px;
+
+    clip-path: polygon(0 100%, 0 35%, 8% 0, 96% 0, 96% 12.5%, 8.8% 12.5%, 2.5% 40%, 2.5% 100%);
+
+    position: absolute;
+    top: 0;
+}
+
+.subtitle h2::after{
+    display: block;
+    content: "";
+    width: 250px;
+    height: 50px;
+
+    clip-path: polygon(4% 100%, 4% 87.5%, 91.2% 87.5%, 97.5% 60%, 97.5% 0, 100% 0, 100% 65%, 92% 100%);
+
+    position: absolute;
+    bottom: 0;
+}
 
 /* -------------------------- header -------------------------- */
 .wrapper header{
@@ -64,7 +108,6 @@ header ul{
 }
 
 header li a{
-    text-decoration: none;
     font-size: 18px;
     color: #808080;
 }
@@ -135,6 +178,9 @@ main .slider ol li{
     border-radius: 50%;
 }
 
+
+
+/* banner1 */
 main .banner1{
     background-color: #F5F5F7;    
 }
@@ -187,8 +233,173 @@ main .hot_sale{
 }
 
 main .hot_sale .wrapper{
-    height: 1100px;
+    padding: 60px 0;
+    box-sizing: border-box;
 }
+
+
+main .hot_sale .subtitle h2{
+    color: #963080;
+}
+
+main .hot_sale .subtitle h2::before{
+    background-color: #963080;
+}
+
+main .hot_sale .subtitle h2::after{
+    background-color: #963080;
+}
+
+main .hot_sale ul{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+main .hot_sale li{
+    width: 368px;
+    height: 550px;
+    background-color: #fff;
+
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 3px;
+
+}
+
+main .hot_sale li a{
+    color: #000;
+    text-align: center;
+}
+
+main .hot_sale li p{
+    margin-top: 20px;
+    line-height: 2;
+}
+
+main .hot_sale li img{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+
+    transform: translate(-50%, -50%) ;
+
+    /* border: 1px solid #000; */
+}
+
+main .hot_sale li:before{
+    content: "";
+    display: block;
+    height: 500px;
+    width: 318px;
+    border: 5px solid #963080;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+main .hot_sale li:after{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border: 8px solid;
+
+    border-color: transparent transparent transparent #000;
+
+    position: absolute;
+    top: 160px;
+    left: 130px;
+}
+
+main .hot_sale .read_more{
+    color: #963080;
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px;
+    margin: 30px auto;
+    /* margin-bottom: 60px; */
+
+    width: 270px;
+    background-color: #fff;
+
+    position: relative;
+    border-radius: 3px;
+
+}
+
+main .hot_sale .read_more:before{
+    content: '';
+    width: 220px;
+    height: 70px;
+    
+    border: 5px solid #963080;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+
+
+
+/* banner2 */
+main .banner2{
+    height: 600px;
+    background-image: url("../img/banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+main .banner2 .wrapper{
+    position: relative;
+}
+
+main .banner2 h3{
+    margin-top: 60px;
+}
+
+main .banner2 h3:last-child{
+    width: 410px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    line-height: 75px;
+
+    position: relative;
+    left: 150px;
+
+    border-radius: 3px;
+}
+
+
+
+/* news */
+main .news{
+    background-color: #F5F5F7; 
+}
+
+main .news .wrapper{
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+main .news .subtitle h2{
+    color: #6A7A73;
+}
+
+main .news .subtitle h2::before{
+    background-color: #6A7A73;
+}
+
+main .news .subtitle h2::after{
+    background-color: #6A7A73;
+}
+
 
 
 /* -------------------------- footer -------------------------- */
