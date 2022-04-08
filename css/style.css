@@ -364,7 +364,7 @@ main .banner2 h3{
 }
 
 main .banner2 h3:last-child{
-    width: 410px;
+    width: 400px;
     color: #fff;
     background-color: #000;
     text-align: center;
@@ -374,6 +374,7 @@ main .banner2 h3:last-child{
     left: 150px;
 
     border-radius: 3px;
+
 }
 
 
@@ -430,6 +431,64 @@ main .news tbody tr{
 
 
 
+/* links */
+
+main .links .wrapper{
+    padding: 100px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main .links a{
+    color: #fff;
+    height: 367.8px;
+
+    width: 367.8px;
+    background-color: #0F4480;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+main .links a h2{
+    width: 347.8px;
+    line-height: 347.8px;
+}
+
+
+main .links a:first-child{
+    clip-path: polygon(25% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+}
+
+main .links a:nth-child(2){
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+}
+
+main .links a:last-child{
+    clip-path: polygon(0 0, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0 75%);
+}
+
+
+main .links a:first-child h2{
+    clip-path: polygon(25% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+}
+
+main .links a:nth-child(2) h2{
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+}
+
+main .links a:last-child h2{
+    clip-path: polygon(0 0, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0 75%);
+}
+
+
+main .links a:hover h2{
+    background-color: #fff;
+    color: #0F4480;
+}
 
 
 /* -------------------------- footer -------------------------- */
@@ -453,6 +512,7 @@ footer .icon{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000;
 }
 
 footer .icon img{
