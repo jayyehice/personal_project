@@ -400,6 +400,36 @@ main .news .subtitle h2::after{
     background-color: #6A7A73;
 }
 
+main .news .news_table{
+    
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+}
+
+main .news table{
+    width: 100%;
+}
+
+main .news table td{
+    line-height: 2.5;
+    padding-left: 20px;
+}
+
+main .news table thead{
+    background-color: #000;
+    color: #fff;
+}
+
+main .news tbody tr{
+    color: #4A5856;
+    border-bottom: 1px solid #EEEFF1;
+}
+
+
+
 
 
 /* -------------------------- footer -------------------------- */
