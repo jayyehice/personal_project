@@ -1,0 +1,81 @@
+main .breadcrumb ul{
+    display: flex;
+    /* border: 1px solid #000; */
+    width: 200px;
+    padding: 40px 0;
+}
+
+main .breadcrumb li{
+    margin-right: 10px;
+}
+
+main .package ul{
+    width: 987px;
+    margin: 60px auto;
+}
+
+main .package li{
+    margin-bottom: 80px;
+
+}
+
+main .package li a{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    
+}
+
+main .package li div{
+    width: 467px;
+    height: 340px;
+    background-color: #000;
+
+}
+
+main .package li div{
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+main .package li h4{
+    margin-bottom: 20px;
+
+}
+
+main .package li p{
+    line-height: 2;
+}
+
+main .package li:nth-child(odd) div{
+    clip-path: polygon(0 0, 63.6% 0%, 100% 50%, 100% 100%, 36.4% 100%, 0% 50%);
+}
+
+main .package li:nth-child(even) div{
+    clip-path: polygon(36.4% 0, 100% 0, 100% 50%, 63.6% 100%, 0 100%, 0% 50%);
+    order: -1;
+}
+
+main .package li:nth-child(odd) div{
+    padding-left: 100px;
+
+}
+
+main .package li:nth-child(even) div{
+    text-align: right;
+    padding-right: 100px;
+}
+
+main .package li img{
+    border-radius: 3px;
+    transition: all 1s;
+}
+
+main .package li:nth-child(odd) a:hover img{    
+    transform: translate(48px);
+}
+
+main .package li:nth-child(even) a:hover img{    
+    transform: translate(-48px);
+}

@@ -21,12 +21,21 @@ body{
 }
 
 p{
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
 }
 
 h3{
     font-size: 60px;
+}
+
+h4{
+    font-size: 30px;
 }
 
 a{
@@ -34,10 +43,7 @@ a{
     text-decoration: none;
 }
 
-h2{
-    font-size: 50px;
-    text-align: center;
-}
+
 
 .subtitle {
     width: 250px;
@@ -311,8 +317,8 @@ main .hot_sale li:after{
     border-color: transparent transparent transparent #000;
 
     position: absolute;
-    top: 160px;
-    left: 130px;
+    top: 172px;
+    left: 122px;
 }
 
 main .hot_sale .read_more{
