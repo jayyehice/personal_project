@@ -3,6 +3,7 @@
 
 body{
     font-family: "微軟正黑體";
+    min-width: 1440px;
 }
 
 .wrapper{
@@ -48,7 +49,6 @@ a{
 .subtitle {
     width: 250px;
     margin: 60px auto;
-    
 }
 
 .subtitle h2{
@@ -66,6 +66,8 @@ a{
 
     position: absolute;
     top: 0;
+
+    transition: all 1s;
 }
 
 .subtitle h2::after{
@@ -78,6 +80,16 @@ a{
 
     position: absolute;
     bottom: 0;
+
+    transition: all 1s;
+}
+
+.subtitle:hover h2::before{
+    transform: translate(5px, 12px);    
+}
+
+.subtitle:hover h2::after{
+    transform: translate(-5px, -12px);    
 }
 
 /* -------------------------- header -------------------------- */
@@ -243,9 +255,14 @@ main .hot_sale{
     background-color: #F5F5F7;    
 }
 
+main .hot_sale .usb_bgi{
+    /* background-image: url("../img/background_usb.png"); */
+}
+
 main .hot_sale .wrapper{
     padding: 60px 0;
     box-sizing: border-box;
+    /* background-image: url("../img/background_usb.png"); */
 }
 
 
@@ -417,6 +434,7 @@ main .banner2 h3:last-child{
 /* news */
 main .news{
     background-color: #F5F5F7; 
+    /* min-width: 1440px; */
 }
 
 main .news .wrapper{
@@ -532,6 +550,7 @@ footer{
 	background-color: #000;
 	/* height: 200px; */
     color: #fff;
+    /* min-width: 1440px; */
 }
 
 footer .wrapper{
