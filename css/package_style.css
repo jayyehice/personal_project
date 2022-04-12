@@ -1,5 +1,8 @@
 
-
+main{
+    background-image: url("../img/background_usb.png");
+    background-size: cover;
+}
 main .package ul{
     width: 987px;
     margin: 60px auto;

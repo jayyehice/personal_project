@@ -200,6 +200,11 @@ main .slider ul li{
     flex-shrink: 0;
 }
 
+main .slider ul li img{
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 main .slider ul li:first-child{
     background-image: url("../img/slider01.jpg");
 }
@@ -275,17 +280,14 @@ main .banner1 h3{
 /* hot sale */
 
 main .hot_sale{
-    background-color: #F5F5F7;    
-}
-
-main .hot_sale .usb_bgi{
-    /* background-image: url("../img/background_usb.png"); */
+    background-color: #F5F5F7;
+    background-image: url("../img/background_usb-2.png");
+       
 }
 
 main .hot_sale .wrapper{
     padding: 60px 0;
     box-sizing: border-box;
-    /* background-image: url("../img/background_usb.png"); */
 }
 
 
@@ -457,6 +459,7 @@ main .banner2 h3:last-child{
 /* news */
 main .news{
     background-color: #F5F5F7; 
+    background-image: url("../img/background_usb-2.png");
     /* min-width: 1440px; */
 }
 

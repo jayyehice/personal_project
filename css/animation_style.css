@@ -1,0 +1,312 @@
+
+main .animation .wrapper{
+    width: 1000px;
+    height: 640px;
+    /* border: 1px solid #000; */
+    position: relative;
+    /* background-image: url("../img/slider01.jpg"); */
+    margin-bottom: 110px;
+}
+
+main .animation div{
+    position: absolute;
+}
+
+main .animation .logoall{
+    width: 138.6px;
+    height: 221.4px;
+    background-color: #000;
+    
+    /* top: 150px; */
+    top: 209.3px;
+}
+
+main .animation .logo4word{
+    position: absolute;
+    /* bottom: 150px; */
+    bottom: 90.7px;
+    left: 154px;
+    opacity: 0;
+
+    animation: logo4words 1s 3s 1 linear forwards;
+}
+
+@keyframes logo4words{
+    0%{
+        bottom: 90.7px;
+        opacity: 0;
+    }
+
+    100%{
+        bottom: 150px;
+        opacity: 1;
+    }
+}
+
+main .animation .logoll{
+    clip-path: polygon(42% 0, 100% 0, 100% 7%, 47% 7%, 12% 29%, 12% 100%, 0 100%, 0 26%);
+    /* left: 139.87px; */
+    left: 410px;
+    /* display: none; */
+    opacity: 0;
+
+    animation: logoll 4s 1 linear forwards;
+}
+
+@keyframes logoll {
+    0%{
+        opacity: 1;
+    }
+    1.25%{
+        opacity: 0;
+    }
+    2.5%{
+        opacity: 1;
+    }
+    3.75%{
+        opacity: 0;
+    }
+    25%{
+        left: 410px;
+        opacity: 1;
+    }
+    50%{
+        left: 139.87px;
+        opacity: 1;
+    }
+    75%{
+        left: 139.87px;
+        opacity: 1;
+        top: 209.3px;
+    }
+    100%{
+        top:150px;
+        left: 139.87px;
+        opacity: 1;
+    }
+    
+}
+
+
+
+main .animation .logolr{
+    clip-path: polygon(53% 93%, 88% 71%, 88% 0, 100% 0, 100% 74%, 58% 100%, 0 100%, 0 93%);
+    left: 181.54px;
+    opacity: 0;
+
+    animation: logo_rest 2s 2s 1 linear forwards;
+}
+
+@keyframes logo_rest {
+    0%{opacity: 0;}
+    2.5%{opacity: 1;}
+    5%{opacity: 0;}
+    7.5%{opacity: 1;}
+    10%{opacity: 0;}
+    50%{
+        opacity: 1;
+        top: 209.3px;
+    }
+    100%{
+        opacity: 1;
+        top: 150px;
+    }
+
+}
+
+@keyframes logo_m {
+    25%{opacity: 0;}
+    25.5%{
+        opacity: 1;}
+    26.25%{opacity: 0;}
+    27.5%{opacity: 1;}
+    28.75%{opacity: 0;}
+    50%{
+        opacity: 1;
+        top: 209.3px;
+    }
+    75%{
+        opacity: 1;
+        top: 209.3px;
+    }
+    100%{
+        opacity: 1;
+        top: 150px;
+    }
+
+}
+
+main .animation .logocl{
+    clip-path: polygon(42% 0, 100% 0, 100% 7%, 47% 7%, 12% 29%, 12% 100%, 0 100%, 0 26%);
+    right: 500px;
+
+    opacity: 0;
+
+    animation: logo_m 4s 1 linear forwards;
+}
+
+main .animation .logocc{
+    clip-path: polygon(56% 0, 56% 100%, 44% 100%, 44% 0);
+    left: 430.7px;
+
+    opacity: 0;
+    animation: logo_m 4s 1 linear forwards;
+}
+
+main .animation .logocr{
+    clip-path: polygon(58% 0, 100% 26%, 100% 100%, 88% 100%, 88% 29%, 53% 7%, 0 7%, 0 0);
+    left: 500px;
+
+    opacity: 0;
+    animation: logo_m 4s 1 linear forwards;
+}
+
+main .animation .logorl{
+    clip-path: polygon(42% 0, 100% 0, 100% 7%, 47% 7%, 12% 29%, 12% 100%, 0 100%, 0 26%);
+    right: 181.54px;
+    opacity: 0;
+
+    animation: logo_rest 2s 2s 1 linear forwards;
+}
+
+main .animation .logorr{
+    clip-path: polygon(53% 93%, 88% 71%, 88% 0, 100% 0, 100% 74%, 58% 100%, 0 100%, 0 93%);
+    /* right: 139.87px; */
+    right: 410px;
+    opacity: 0;
+
+    animation: logorr 4s 1 linear forwards;
+}
+
+@keyframes logorr {
+    0%{
+        opacity: 1;        
+    }
+    1.25%{
+        opacity: 0;      
+    }
+    2.5%{
+        opacity: 1;
+    }
+    3.75%{
+        opacity: 0;
+    }
+    25%{
+        right: 410px;
+        opacity: 1; 
+    }
+    50%{
+        right: 139.87px;
+        opacity: 1; 
+    }
+    75%{
+        right: 139.87px;
+        opacity: 1;
+        top: 209.3px;
+    }
+    100%{
+        top:150px;
+        right: 139.87px;
+        opacity: 1;
+    }
+    
+}
+
+main .animation .logoinside{  
+    overflow: hidden;
+    top: 173px;
+}
+
+main .animation .logoinside img{
+}
+
+main .animation .logoinside1{
+    width: 133.25px;
+    height: 174.37px;
+    clip-path: polygon(0 100%, 0 25%, 33% 0, 100% 0, 100% 75%, 67% 100%);
+    left: 163px;
+
+    opacity: 0;
+
+    animation: logoinside .5s 4s 1 linear forwards;
+}
+
+main .animation .logoinside2{
+    width: 99.7px;
+    height: 190.64px;
+    left: 384px;
+
+    clip-path: polygon(0 100%, 0 23.2%, 44.4% 0, 100% 0, 100% 100%);
+
+    opacity: 0;
+
+    animation: logoinside .5s 4.5s 1 linear forwards;
+}
+
+main .animation .logoinside3{
+    width: 99.7px;
+    height: 190.64px;
+    right: 384px;
+
+    clip-path: polygon(0 100%, 0 0, 55.6% 0, 100% 23.2%, 100% 100%);
+
+    opacity: 0;
+
+    animation: logoinside .5s 5s 1 linear forwards;
+}
+
+main .animation .logoinside4{
+    width: 133.25px;
+    height: 174.37px;
+    clip-path: polygon(0 100%, 0 25%, 33% 0, 100% 0, 100% 75%, 67% 100%);
+    right: 163px;
+
+    opacity: 0;
+
+    animation: logoinside .5s 5.5s 1 linear forwards;
+}
+
+@keyframes logoinside {
+    0%{opacity: 0;}
+    25%{opacity: .5;}
+    100%{opacity: .3;}
+}
+
+
+main .animation .logoinside1 img{
+    animation: logoinsideimg1 1s 4.5s 1 linear forwards;
+}
+
+@keyframes logoinsideimg1{
+    0%{}
+    100%{ transform: translate(-20%, 0);}
+}
+
+main .animation .logoinside2 img{
+    animation: logoinsideimg2 1s 5s 1 linear forwards;
+}
+
+@keyframes logoinsideimg2{
+    0%{}
+    100%{ transform: translate(0, -20%);}
+}
+
+main .animation .logoinside3 img{
+    animation: logoinsideimg3 1s 5.5s 1 linear forwards;
+    transform: translate(0, -30%)
+}
+
+@keyframes logoinsideimg3{
+    0%{}
+    100%{ transform: translate(0, -10%);}
+}
+
+main .animation .logoinside4 img{
+    animation: logoinsideimg4 1s 6s 1 linear forwards;
+    transform: translate(-50%, 0);
+}
+
+@keyframes logoinsideimg4{
+    0%{}
+    100%{ transform: translate(-30%, 0);}
+}
