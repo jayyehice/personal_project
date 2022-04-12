@@ -1,0 +1,43 @@
+
+main .links a:first-child{
+    background-color: #E84D2D;
+}
+
+main .links a:nth-child(2){
+    background-color: #E98400;
+}
+
+main .links a:last-child{
+    background-color: #F6D419;
+}
+
+main .links a{
+    opacity: .5;
+}
+
+main .links a:hover{
+    opacity: 1.0; 
+}
+
+main .links a div{
+    width: 280px;
+    height: 280px;
+    background-color: #fff;
+
+    padding: 51.5px;
+    box-sizing: border-box;
+
+    /* opacity: .5; */
+}
+
+main .links a {
+    transition: all 1s;
+}
+
+main .links a img{
+    transition: all 1s;
+}
+
+main .links a:hover img{
+    transform: scale(1.05);
+}

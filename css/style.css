@@ -92,6 +92,29 @@ a{
     transform: translate(-5px, -12px);    
 }
 
+.cliper_path_left{
+    clip-path: polygon(25% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
+}
+
+.cliper_path_center{
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+}
+
+.cliper_path_right{
+    clip-path: polygon(0 0, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0 75%);
+}
+
+.breadcrumb ul{
+    display: flex;
+    width: 200px;
+    padding: 40px 0;
+}
+
+.breadcrumb li{
+    margin-right: 10px;
+}
+
+
 /* -------------------------- header -------------------------- */
 .wrapper header{
     height: 45px;
@@ -509,32 +532,6 @@ main .links a{
 main .links a h2{
     width: 280px;
     line-height: 280px;
-}
-
-
-main .links a:first-child{
-    clip-path: polygon(25% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
-}
-
-main .links a:nth-child(2){
-    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
-}
-
-main .links a:last-child{
-    clip-path: polygon(0 0, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0 75%);
-}
-
-
-main .links a:first-child h2{
-    clip-path: polygon(25% 0%, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 25%);
-}
-
-main .links a:nth-child(2) h2{
-    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
-}
-
-main .links a:last-child h2{
-    clip-path: polygon(0 0, 75% 0%, 100% 25%, 100% 100%, 25% 100%, 0 75%);
 }
 
 

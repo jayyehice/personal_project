@@ -1,13 +1,4 @@
-main .breadcrumb ul{
-    display: flex;
-    /* border: 1px solid #000; */
-    width: 200px;
-    padding: 40px 0;
-}
 
-main .breadcrumb li{
-    margin-right: 10px;
-}
 
 main .package ul{
     width: 987px;
