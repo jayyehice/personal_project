@@ -11,6 +11,11 @@ body{
     margin: 0 auto;
 }
 
+.wrapper850{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
 .small_logo{
     /* display: block; */
     width: 160px;
