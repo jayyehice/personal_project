@@ -1,0 +1,115 @@
+/* omo */
+
+main .omo .wrapper{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 40px auto;
+}
+
+main .omo .wrapper iframe{
+    width: 460px;
+    height: 300px;
+    border: 1;
+    border-radius: 3px;
+    border: 5px solid #F5F5F7;
+}
+
+main .omo .wrapper div{
+    /* border: 1px solid black; */
+    padding-left:40px;
+    
+}
+
+.omo p{
+    line-height: 2.5;
+}
+
+.omo p i{
+    margin-right: 10px;
+}
+
+
+/* contact */
+main .contact{
+    background-color: #F5F5F7;
+    background-image: url("../img/background_usb-2.png");
+    padding: 40px 0;
+    
+}
+
+main .contact .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+main .contact input{
+    margin-top: 10px;
+    width: 600px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+main .contact textarea{
+    margin-top: 10px;
+    width: 600px;
+    height: 300px;
+    border-radius: 3px;
+}
+
+main .contact input:last-child{
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* shop */
+main .links a:first-child{
+    background-color: #E84D2D;
+}
+
+main .links a:nth-child(2){
+    background-color: #E98400;
+}
+
+main .links a:last-child{
+    background-color: #F6D419;
+}
+
+main .links a{
+    opacity: .5;
+}
+
+main .links a:hover{
+    opacity: 1.0; 
+}
+
+main .links a div{
+    width: 280px;
+    height: 280px;
+    background-color: #fff;
+
+    padding: 51.5px;
+    box-sizing: border-box;
+
+    /* opacity: .5; */
+}
+
+main .links a {
+    transition: all 1s;
+}
+
+main .links a img{
+    transition: all 1s;
+}
+
+main .links a:hover img{
+    transform: scale(1.05);
+}
