@@ -1,4 +1,12 @@
 
+/* intro */
+main .intro .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* basic */
 
 main .basic{

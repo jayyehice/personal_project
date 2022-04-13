@@ -71,6 +71,9 @@ main .contact input:last-child{
 
 
 /* shop */
+main .links{
+    margin-top: 40px;
+}
 main .links a:first-child{
     background-color: #E84D2D;
 }
