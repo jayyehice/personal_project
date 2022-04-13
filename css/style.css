@@ -119,6 +119,9 @@ a{
     margin-right: 10px;
 }
 
+.unchoose{
+    opacity: .3;
+}
 
 /* -------------------------- header -------------------------- */
 .wrapper header{

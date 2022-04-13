@@ -67,10 +67,6 @@ main .page_product aside a{
 
 /* page intro */
 
-.unchoose{
-    opacity: .3;
-}
-
 main .page_intro{
     margin: 50px auto;
 }
@@ -142,55 +138,6 @@ main .page_intro li div p:before{
     border-radius: 50%;
 
 }
-
-#red:before{
-    background-color: #BD3440;
-}
-
-#orange:before{
-    background-color: #D39164;
-}
-
-#yellow:before{
-    background-color: #EAE673;
-}
-
-#green:before{
-    background-color: #70CDD4;
-}
-
-#blue:before{
-    background-color: #3E4FC6;
-}
-
-#pink:before{
-    background-color: #E64ACA;
-}
-
-#purple:before{
-    background-color: #353680;
-}
-
-#black:before{
-    background-color: #000;
-}
-
-#silver:before{
-    background-color: #DBDBDB;
-}
-
-#_white:before{
-    /* background-color: #efecec; */
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-
-#_black:before{
-    background-color: #000;
-}
-
-
-
 
 
 /* may like */

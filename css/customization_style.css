@@ -1,0 +1,151 @@
+
+/* customization */
+
+main .customization{
+    margin: 50px auto;
+}
+
+main .customization .wrapper850{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    margin-top: 30px;
+}
+
+#show_box{
+    width: 376px;
+    height: 376px;
+    background-color: #fff;
+    position: relative;
+    border: 3px solid #F5F5F7;
+    border-radius: 5px;
+}
+
+#intro_img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#show_logo{
+    height: 70px;
+    position: absolute;
+    top: 148px;
+    left: 65px;
+    /* border: 1px solid #000; */
+    z-index: 1;
+}
+
+main .customization ul{
+    /* border: 1px solid #000; */
+    width: 410px;
+    background-color: #fff;
+}
+
+main .customization p{
+    font-size: 20px;
+}
+
+ main .customization li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    /* border: 1px solid #000; */
+}
+
+main .customization li:last-child{
+    margin-bottom: 0px;
+}
+
+main .customization li > p:first-child{
+    width: 110px;
+    /* background-color: #000;
+    color: #fff; */
+    font-weight: bold;
+    text-align: center;
+    margin-right: 40px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+main .customization li div{
+    display: flex;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    width: 210px;
+    /* border: 1px solid #000; */
+}
+
+main .customization li div p{
+    position: relative;
+    width: 40px;
+    text-align: right;
+    margin-right: 20px;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+}
+
+main .customization li div p:before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+} 
+
+
+/* real ref */
+
+main .real_ref{
+    background-color: #F5F5F7;
+    background-image: url("../img/background_usb-2.png");
+    
+}
+
+
+main .real_ref .wrapper850{
+    padding-top: 30px;
+    padding-bottom: 80px;
+}  
+
+main .real_ref .subtitle h2{
+    color: #000;
+}
+
+main .real_ref .subtitle h2::before{
+    background-color: #000;
+}
+
+main .real_ref .subtitle h2::after{
+    background-color: #000;
+}
+
+main .real_ref ul{
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .real_ref li{
+    border: 1px solid #000;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+main .real_ref li:nth-child(3n+1){
+    margin-left: 0;
+}
+
+main .real_ref li:hover{
+    opacity: 1;
+}

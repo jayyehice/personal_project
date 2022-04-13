@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>客製專區</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page_style.css">
+    <link rel="stylesheet" href="css/color_change.css">
+    <link rel="stylesheet" href="css/customization_style.css">
 </head>
 <body>
     <!-- ----------------------Header------------------------ -->
@@ -40,10 +41,72 @@
             </div>
         </section>
 
+        <h2>客製專區</h2>
+
         <section class="customization">
-            <h2>客製專區</h2>
+            
+            <div class="wrapper850">
+                <div id="show_box">
+                    <img id="intro_img" src="./img/usb/red_white.jpg" alt="">
+                    
+                </div>
+
+                <ul>
+                    <li>
+                        <p>產品類型</p>
+                        <p>旋轉碟</p>
+                    </li>
+                    <li>
+                        <p>顏色</p>
+                        <div>
+                            <p class="" id="red">紅</p>
+                            <p class="unchoose" id="orange">橘</p>
+                            <p class="unchoose" id="yellow">黃</p>
+                            <p class="unchoose" id="green">綠</p>
+                            <p class="unchoose" id="blue">藍</p>
+                            <p class="unchoose" id="pink">粉</p>
+                            <p class="unchoose" id="purple">紫</p>
+                            <p class="unchoose" id="black">黑</p>
+                            <p class="unchoose" id="silver">銀</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>底殼</p>
+                        <div>
+                            <p class="" id="_white">白</p>
+                            <p class="unchoose" id="_black">黑</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>上傳圖檔</p>
+                        <input id="file" type="file"/>
+                    </li>
+                    <li>
+                        <p>雷雕示意</p>
+                        <input id="show_btn" type="button" value="顯示">
+                    </li>
+                </ul>
+            </div>
         </section>
 
+
+        <!-- real product -->
+        <section class="real_ref">
+            <div class="wrapper850">
+                <div class="subtitle">
+                    <h2>參考成品</h2>
+                </div>
+
+                <ul>
+                    <li><img src="./img/real_ref01.jpg" alt=""></li>
+                    <li><img src="./img/real_ref02.jpg" alt=""></li>
+                    <li><img src="./img/real_ref03.jpg" alt=""></li>
+                    <li><img src="./img/real_ref04.jpg" alt=""></li>
+                    <li><img src="./img/real_ref05.jpg" alt=""></li>
+                    <li><img src="./img/real_ref06.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
 
 
 	</main>
@@ -77,5 +140,8 @@
         </section>
         
 	</footer>
+
+    <script src="./js/color_change.js"></script>
+    <script src="./js/customization.js"></script>
 </body>
 </html>
