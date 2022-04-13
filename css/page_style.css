@@ -1,14 +1,17 @@
 
 h2{
     text-align: left;
+    margin-top: 40px;
 }
+
+
 
 main .page_product .wrapper850{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     /* border: 1px solid #000; */
-    padding: 30px 0;
+    padding: 50px 0;
     box-sizing: border-box;
 }
 
@@ -64,13 +67,23 @@ main .page_product aside a{
 
 /* page intro */
 
+.unchoose{
+    opacity: .3;
+}
+
+main .page_intro{
+    margin: 50px auto;
+}
+
 main .page_intro .wrapper850{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 400px;
     /* border: 1px solid black; */
-    padding: 40px 0;
+    /* padding: 50px 0; */
+    /* margin: 50px auto; */
+    margin-top: 30px;
 }
 
 main .page_intro img{
@@ -82,7 +95,7 @@ main .page_intro img{
 main .page_intro li{
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 main .page_intro li:last-child{
@@ -92,6 +105,12 @@ main .page_intro li:last-child{
 
 main .page_intro li > p:first-child{
     width: 150px;
+}
+
+main .page_intro li a{
+    margin-right: 20px;
+    color: #000;
+    text-decoration: underline;
 }
 
 main .page_intro li div{
@@ -106,54 +125,90 @@ main .page_intro li div{
 main .page_intro li div p{
     position: relative;
     /* border: 1px solid black; */
-    width: 50px;
-    text-align: center;
-    margin:0 10px;
+    width: 35px;
+    text-align: right;
+    margin-right: 20px;
+
+    cursor: pointer;
 }
 
 main .page_intro li div p:before{
     content: '';
     position: absolute;
     top: 5px;
-    left: -11px;
+    left: 0px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
 
 }
 
-main .page_intro #red:before{
+#red:before{
     background-color: #BD3440;
 }
 
-main .page_intro #orange:before{
+#orange:before{
     background-color: #D39164;
 }
 
-main .page_intro #yellow:before{
+#yellow:before{
     background-color: #EAE673;
 }
 
-main .page_intro #green:before{
+#green:before{
     background-color: #70CDD4;
 }
 
-main .page_intro #blue:before{
+#blue:before{
     background-color: #3E4FC6;
 }
 
-main .page_intro #pink:before{
+#pink:before{
     background-color: #E64ACA;
 }
 
-main .page_intro #purple:before{
+#purple:before{
     background-color: #353680;
 }
 
-main .page_intro #black:before{
+#black:before{
     background-color: #000;
 }
 
-main .page_intro #silver:before{
+#silver:before{
     background-color: #DBDBDB;
+}
+
+#_white:before{
+    /* background-color: #efecec; */
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#_black:before{
+    background-color: #000;
+}
+
+
+
+
+
+/* may like */
+
+main .may_like{
+    margin-top: 100px;
+}
+
+main .may_like .wrapper850{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+main .may_like img{
+    height: 150px;
+    border: 3px solid #F5F5F7;
 }
