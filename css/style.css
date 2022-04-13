@@ -3,11 +3,11 @@
 
 body{
     font-family: "微軟正黑體";
-    min-width: 1440px;
+    min-width: 1200px;
 }
 
 .wrapper{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -106,7 +106,7 @@ a{
 
 .breadcrumb ul{
     display: flex;
-    width: 200px;
+    width: 250px;
     padding: 40px 0;
 }
 
@@ -147,8 +147,9 @@ header nav{
 
 header ul{
     display: flex;
-    width: 700px;
+    width: 650px;
     height: 18px;
+    flex-wrap: wrap;
     /* border: 1px solid #000; */
     
 }
@@ -173,9 +174,9 @@ header li{
 
 header li:nth-child(2){ background-position: 0 -23px; }
 header li:nth-child(3){ background-position: 0 -46px; }
-header li:nth-child(4){ background-position: 0 -69px; }
-header li:nth-child(5){ background-position: 0 -92px; }
-header li:nth-child(6){ background-position: 0 -115px; }
+/* header li:nth-child(4){ background-position: 0 -69px; } */
+header li:nth-child(4){ background-position: 0 -92px; }
+header li:nth-child(5){ background-position: 0 -115px; }
 
 
 /* -------------------------- main -------------------------- */
@@ -558,6 +559,7 @@ footer .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 footer .icon{

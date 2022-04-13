@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>購買連結</title>
+    <title>旋轉碟</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/shop_style.css">
+    <link rel="stylesheet" href="css/page_style.css">
 </head>
 <body>
     <!-- ----------------------Header------------------------ -->
@@ -35,53 +35,85 @@
                 <ul>
                     <li><a href="index.html">首頁</a></li>
                     <li>></li>
-                    <li>購買連結</li>
+                    <li><a href="products.html">產品分類</a></li>
+                    <li>></li>
+                    <li>旋轉碟</li>
                 </ul>
             </div>
         </section>
 
-        <section class="shop">
-            <h2>購買連結</h2>
-        </section>
-
-
-        <!-- links -->
-        <section class="links">
+        <section class="page_product">
+            <h2>旋轉碟</h2>
             <div class="wrapper">
-                <a class="cliper_path_left" href="#">
-                    <div class="cliper_path_left">
-                        <img src="img/shop_01.jpg" alt="">
-                    </div>
-                </a>
-
-                <a class="cliper_path_center" href="#">
-                    <div class="cliper_path_center">
-                        <img src="img/shop_02.jpg" alt="">
-                    </div>
-                </a>
-
-                <a class="cliper_path_right" href="#">
-                    <div class="cliper_path_right">
-                        <img src="img/shop_03.jpg" alt="">
-                    </div>
-                </a>
+                <div class="show">
+                    <img id="show_img" src="img/page01.jpg" alt="">
+                    <ul>
+                        <li><img id="small_product1" src="img/page01.jpg" alt=""></li>
+                        <li><img id="small_product2" src="img/page02.jpg" alt=""></li>
+                        <li><img id="small_product3" src="img/page03.jpg" alt=""></li>
+                        <li><img id="small_product4" src="img/page04.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <aside>
+                    <h4>產品分類</h4>
+                    <ul>
+                        <li><a href="#">旋轉碟</a></li>
+                        <li><a href="#">鋁管碟</a></li>
+                        <li><a href="#">迷你碟</a></li>
+                        <li><a href="#">小夜燈</a></li>
+                    </ul>
+                </aside>
             </div>
         </section>
 
-
-        <!-- slider -->
-        <section class="slider">
+        <section class="page_intro">
+            <h2>商品介紹</h2>
             <div class="wrapper">
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <p>顏色</p>
+                        <p id="">紅</p>
+                        <p id="">橘</p>
+                        <p id="">黃</p>
+                        <p id="">綠</p>
+                        <p id="">藍</p>
+                        <p id="">粉</p>
+                        <p id="">紫</p>
+                        <p id="">黑</p>
+                        <p id="">銀</p>
+                    </li>
+                    <li>
+                        <p>尺寸</p>
+                        <p>58 x 19 x 10 mm</p>
+                    </li>
+                    <li>
+                        <p>雕刻範圍</p>
+                        <p>20 x 10 mm</p>
+                    </li>
+                    <li>
+                        <p>適用包裝</p>
+                        <p>蘋果派盒 馬口鐵盒 PP盒</p>
+                    </li>
+                    <li>
+                        <p>印製方式</p>
+                        <p>雷射雕刻 UV直噴 網版印刷</p>
+                    </li>
+                    <li>
+                        <p>最低客製數量</p>
+                        <p>1 pcs</p>
+                    </li>
+                    <li>
+                        <p>購買連結</p>
+                        <a href="#">蝦皮</a>
+                        <a href="#">Yahoo</a>
+                        <a href="#">露天</a>
+                    </li>
                 </ul>
-                <ol>
-                    <li><a href="" herf="#"></a></li>
-                    <li><a href="" herf="#"></a></li>
-                </ol>
             </div>
+            
         </section>
+
+
 
 	</main>
 
@@ -114,5 +146,7 @@
         </section>
         
 	</footer>
+
+    <script src="js/page.js"></script>
 </body>
 </html>
