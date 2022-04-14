@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>產品分類</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page_style.css">
+    <link rel="stylesheet" href="css/products_style.css">
 </head>
 <body>
     <!-- ----------------------Header------------------------ -->
@@ -42,6 +42,116 @@
 
         <section class="products">
             <h2>產品分類</h2>
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <ol>
+                            <li class="space">
+                                <h4>產品<br>分類</h4>
+                            </li>
+                            
+                            <li>
+                                <h4>雷射雕刻</h4>
+                                <p>(不限數量)</p>
+                            </li>
+                            <li>
+                                <h4>UV直噴</h4>
+                                <p>(100起訂)</p>
+                            </li>
+                            <li>
+                                <h4>網版印刷</h4>
+                                <p>(500起訂)</p>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        
+                        <ol class="prod prod_h_1">
+                            <li>
+                                <h4>旋轉碟</h4>
+                                
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        
+                        <ol class="prod prod_h">
+                            <li>
+                                <h4>鋁管碟</h4>
+                                
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                        </ol>
+                    </li>
+
+
+                    <li>
+                        
+                        <ol class="prod prod_h">
+                            <li>
+                                <h4>迷你碟</h4>
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        
+                        <ol class="prod prod_h">
+                            <li>
+                                <h4>小夜燈</h4>
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                            <li class="check">
+                                <img src="./img/products01.jpg" alt="">
+
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
         </section>
 
 
@@ -77,5 +187,30 @@
         </section>
         
 	</footer>
+
+    <script>
+        var prod = document.getElementsByClassName("prod");
+        var t = 0 ;
+
+        for(let i=0; i<prod.length; i++){
+
+            prod[i].addEventListener("click",function(){
+                for(let j=0; j<prod.length; j++){
+                    if(j === i){
+                        prod[j].style.height = "265px";
+                        prod[j].firstElementChild.style.backgroundColor ="#128BDB";
+                        prod[j].firstElementChild.style.color = "white";
+
+                    }else{
+                        prod[j].style.height = "30px";
+                        prod[j].firstElementChild.style.backgroundColor ="#EFEFF1";
+                        prod[j].firstElementChild.style.color = "black";
+                    }
+                }
+                
+            })
+            
+        }
+    </script>
 </body>
 </html>
