@@ -1,18 +1,5 @@
 
 
-
-
-// page_intro
-
-// let color = document.getElementsByClassName("color");
-
-// console.log(color[0].style)
-
-// for(let i=0; i<color.length; i++){
-//     console.log(color[i].id)
-//     console.log(color[i].style)
-// };
-
 let intro_img = document.getElementById("intro_img");
 
 function intro_img_info(){
@@ -49,46 +36,19 @@ function intro_img_case(chosse_case){
     intro_img.src = intro_img_id[2] + intro_img_id[0] + chosse_case.id +'.jpg';
 }
 
-document.getElementById("red").addEventListener("click", function(){
-    intro_img_color(this);
-})
 
-document.getElementById("orange").addEventListener("click", function(){
-    intro_img_color(this);
-})
+//先抓取所有color_btn
+let all_color = document.getElementsByClassName("color_btn");
 
-document.getElementById("yellow").addEventListener("click", function(){
-    intro_img_color(this);
-})
+for(let i=0; i<all_color.length; i++){
+    all_color[i].addEventListener("click",function(){
 
-document.getElementById("green").addEventListener("click", function(){
-    intro_img_color(this);
-})
+        //console.log(this.getAttribute("id")[0]);
 
-document.getElementById("blue").addEventListener("click", function(){
-    intro_img_color(this);
-})
-
-document.getElementById("pink").addEventListener("click", function(){
-    intro_img_color(this);
-})
-
-document.getElementById("purple").addEventListener("click", function(){
-    intro_img_color(this);
-})
-
-document.getElementById("black").addEventListener("click", function(){
-    intro_img_color(this);
-})
-
-document.getElementById("silver").addEventListener("click", function(){
-    intro_img_color(this);
-})
-
-document.getElementById("_white").addEventListener("click", function(){
-    intro_img_case(this);
-})
-
-document.getElementById("_black").addEventListener("click", function(){
-    intro_img_case(this);
-})
+        if(this.getAttribute("id")[0] === '_'){
+            intro_img_case(this);
+        }else{
+            intro_img_color(this);
+        }
+    })
+};
