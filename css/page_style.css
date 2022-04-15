@@ -88,6 +88,23 @@ main .page_intro img{
     /* margin-left: 100px; */
 }
 
+main .page_intro #intro_img_box{
+    position: relative;
+}
+
+main .page_intro #intro_size{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* transition: all 1s; */
+}
+
+main .page_intro #intro_size:hover{
+    cursor: text;
+}
+
+
 main .page_intro li{
     display: flex;
     align-items: center;

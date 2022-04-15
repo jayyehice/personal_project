@@ -28,3 +28,16 @@ small_product3.addEventListener("click", function(){
 small_product4.addEventListener("click", function(){
     change_show(this)
 })
+
+
+// intro_size
+let intro_size = document.getElementById("intro_size");
+let intro_size_button = document.getElementById("intro_size_button");
+
+intro_size_button.addEventListener("mouseover",function(){
+    intro_size.style.opacity = 1;
+})
+
+intro_size_button.addEventListener("mouseout",function(){
+    intro_size.style.opacity = 0;
+})
