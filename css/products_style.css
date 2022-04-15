@@ -15,21 +15,11 @@ main .products img{
     margin-top: 20px;
 }
 
-
-
 main .products ul{
     display: flex;
     flex-direction: column;
     border-radius: 5px;
     /* border: 1px solid black; */
-}
-
-main .products ul{
-    /* overflow: hidden; */
-}
-
-main .products .prod{
-    /* border-bottom: 1px solid #EFEFF1; */
 }
 
 main .products .prod_h{
@@ -43,6 +33,7 @@ main .products .prod_h_1{
     height: 265px;
     overflow: hidden;
     transition: all 1s;
+    border-bottom: 1px solid #EFEFF1;
 }
 
 main .products .prod li:first-child{
@@ -60,8 +51,11 @@ main .products ol li{
     
 }
 
-main .products ul li:first-child li{
+main .products .prod_head{
     background-color: #EFEFF1;
+    padding: 10px 0;
+    clip-path: polygon(0% 0%, 70% 0%, 100% 30%, 100% 100%, 0% 100%);
+    
 }
 
 main .products ol li:first-child{
@@ -69,10 +63,15 @@ main .products ol li:first-child{
     height: 100%;
 }
 
+main .products .prod li:first-child{
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
 
 main .products .prod_h li:first-child{
     background-color: #EFEFF1;
 }
+
+
 
 main .products .prod_h_1 li:first-child{
     background-color: #128BDB;
@@ -85,18 +84,33 @@ main .products ol li:first-child{
 }
 
 main .products .space {
-    /* width: 100px;
-    height: 100px; */
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
+    box-sizing: border-box;
+}
+
+main .products .space::before {
+    content: '';
+    float: right;
+    display: block;
+    width: 10px;
+    height: 70px;
+    background-color: #EFEFF1;
+}
+
+main .products .check::before, .uncheck::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 5px;
 }
 
 main .products .check::before{
-    content: '';
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: #128BDB;
-    margin: 0 auto;
-    margin-top: 5px;
+}
+
+main .products .uncheck::before{
+    background-color: #fff;
 }
