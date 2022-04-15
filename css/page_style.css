@@ -92,18 +92,12 @@ main .page_intro #intro_img_box{
     position: relative;
 }
 
-main .page_intro #intro_size{
+main .page_intro #intro_size, #intro_print_range{
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
-    /* transition: all 1s; */
 }
-
-main .page_intro #intro_size:hover{
-    cursor: text;
-}
-
 
 main .page_intro li{
     display: flex;

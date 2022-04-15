@@ -41,3 +41,16 @@ intro_size_button.addEventListener("mouseover",function(){
 intro_size_button.addEventListener("mouseout",function(){
     intro_size.style.opacity = 0;
 })
+
+
+// intro_print_range
+let intro_print_range = document.getElementById("intro_print_range");
+let intro_print_range_button = document.getElementById("intro_print_range_button");
+
+intro_print_range_button.addEventListener("mouseover",function(){
+    intro_print_range.style.opacity = 1;
+})
+
+intro_print_range_button.addEventListener("mouseout",function(){
+    intro_print_range.style.opacity = 0;
+})
