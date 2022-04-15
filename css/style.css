@@ -52,49 +52,53 @@ a{
 
 
 .subtitle {
-    width: 250px;
+    width: 210px;
     margin: 60px auto;
 }
 
 .subtitle h2{
     line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
     position: relative;
 }
 
 .subtitle h2::before{
     display: block;
     content: "";
-    width: 250px;
+    width: 210px;
     height: 50px;
 
-    clip-path: polygon(0 100%, 0 35%, 8% 0, 96% 0, 96% 12.5%, 8.8% 12.5%, 2.5% 40%, 2.5% 100%);
+    clip-path: polygon(0 100%, 0 41.9%, 10% 0, 97.2% 0, 97.2% 11.7%, 11.1% 11.7%, 2.8% 46.8%, 2.8% 100%);
 
     position: absolute;
     top: 0;
 
-    transition: all 1s;
+    transition: all 2s;
+    
 }
 
 .subtitle h2::after{
     display: block;
     content: "";
-    width: 250px;
+    width: 210px;
     height: 50px;
 
-    clip-path: polygon(4% 100%, 4% 87.5%, 91.2% 87.5%, 97.5% 60%, 97.5% 0, 100% 0, 100% 65%, 92% 100%);
+    clip-path: polygon(2.8% 100%, 2.8% 88.3%, 88.9% 88.3%, 97.2% 53.2%, 97.2% 0, 100% 0, 100% 58.1%, 90% 100%);
 
     position: absolute;
     bottom: 0;
 
     transition: all 1s;
+     
 }
 
-.subtitle:hover h2::before{
-    transform: translate(5px, 12px);    
+.subtitle_animation h2::before{
+    transform: translate(2.8px, 12.5px);    
 }
 
-.subtitle:hover h2::after{
-    transform: translate(-5px, -12px);    
+.subtitle_animation h2::after{
+    transform: translate(-2.8px, -12.5px);   
 }
 
 .cliper_path_left{
@@ -299,6 +303,10 @@ main .hot_sale .wrapper{
     box-sizing: border-box;
 }
 
+main .hot_sale .subtitle{
+    position: sticky;
+    top: 50px;
+}
 
 main .hot_sale .subtitle h2{
     color: #963080;
@@ -315,8 +323,9 @@ main .hot_sale .subtitle h2::after{
 main .hot_sale ul{
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
+    height: 1000px;
     
-
 }
 
 main .hot_sale li{
@@ -329,7 +338,19 @@ main .hot_sale li{
     position: relative;
     border-radius: 3px;
 
+    position: sticky;
+    top: 200px;
+
 }
+
+main .hot_sale ul a:nth-child(2){
+    margin-top: 200px;
+}
+
+main .hot_sale ul a:nth-child(3){
+    margin-top: 400px;
+}
+
 
 main .hot_sale a{
     color: #000;
@@ -343,7 +364,8 @@ main .hot_sale li p{
 
 main .hot_sale li img{
     position: absolute;
-    top: 300px;
+    /* top: 300px; */
+    top: 68%;
     left: 50%;
 
     transform: translate(-50%, -50%) ;
@@ -381,7 +403,7 @@ main .hot_sale a:hover img{
     transform: translate(-50%,-60%);
 }
 
-main .hot_sale .read_more{
+/* main .hot_sale .read_more{
     color: #963080;
     text-align: center;
     line-height: 100px;
@@ -428,7 +450,7 @@ main .hot_sale .read_more:before{
     position: absolute;
     top: 16px;
     left: 16px;
-}
+} */
 
 
 

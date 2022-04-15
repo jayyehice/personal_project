@@ -71,6 +71,11 @@ main .basic{
     background-color: #EFEFF1;
 }
 
+main .basic .subtitle{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
 main .basic .subtitle h2{
     color: #000;
 }
