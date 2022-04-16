@@ -9,31 +9,38 @@ function intro_img_info(){
 
     intro_img_name = intro_img_name.replace(".jpg","");
     let intro_img_id = intro_img_name.split("_");
-    intro_img_id[1] = "_" + intro_img_id[1];
+
+    if(intro_img_id.length === 1){
+        intro_img_id.push('');
+    }else if(intro_img_id.length === 2){
+        intro_img_id[1] = "_" + intro_img_id[1];
+    }
+
+    
     intro_img_id.push(intro_img_path_rest);
 
     return intro_img_id;
 }
 
-function intro_img_color(chosse_color){
+function intro_img_color(choose_color){
 
     let intro_img_id = intro_img_info();
 
     document.getElementById(intro_img_id[0]).classList.add("unchoose");
-    chosse_color.classList.remove("unchoose");
+    choose_color.classList.remove("unchoose");
 
-    intro_img.src = intro_img_id[2] + chosse_color.id + intro_img_id[1] +'.jpg';
+    intro_img.src = intro_img_id[2] + choose_color.id + intro_img_id[1] +'.jpg';
 }
 
-function intro_img_case(chosse_case){
+function intro_img_case(choose_case){
 
     let intro_img_id = intro_img_info();
 
     // console.log(intro_img_id);
     document.getElementById(intro_img_id[1]).classList.add("unchoose");
-    chosse_case.classList.remove("unchoose");
+    choose_case.classList.remove("unchoose");
 
-    intro_img.src = intro_img_id[2] + intro_img_id[0] + chosse_case.id +'.jpg';
+    intro_img.src = intro_img_id[2] + intro_img_id[0] + choose_case.id +'.jpg';
 }
 
 
