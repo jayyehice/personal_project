@@ -35,8 +35,12 @@
     background-color: #DBDBDB;
 }
 
+#white:before{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
 #_white:before{
-    /* background-color: #efecec; */
     border: 1px solid black;
     box-sizing: border-box;
 }
