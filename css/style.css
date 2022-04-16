@@ -2,7 +2,8 @@
 @import url("reset.css");
 
 body{
-    font-family: "微軟正黑體";
+    font-family: "微軟正黑體", 'Noto Sans TC', sans-serif;
+    /* "微軟正黑體"; */
     min-width: 1200px;
 }
 
