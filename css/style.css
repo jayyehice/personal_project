@@ -1,10 +1,13 @@
 
+
+
 @import url("reset.css");
 
 body{
     font-family: "微軟正黑體", 'Noto Sans TC', sans-serif;
     /* "微軟正黑體"; */
     min-width: 1200px;
+
 }
 
 .wrapper{
@@ -126,6 +129,38 @@ a{
 
 .unchoose{
     opacity: .3;
+}
+
+/* ---------------------------go top---------------------- */
+#gotop{
+    position: fixed;
+    
+    bottom: 10px;
+    right: 10px;
+    
+    width: 50px;
+    height: 50px;
+
+    /* color: #fff; */
+
+    background-color: #c2c2c2;
+    opacity: .5;
+
+    border-radius: 5px;
+
+    /* display: none; */
+    transition: all 1s;
+}
+
+#gotop::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    clip-path: polygon(100% 50%, 100% 70%, 50% 20%, 0 70%, 0 50%, 50% 0);
+    margin: 0 auto;
+    margin-top: 18px;
 }
 
 /* -------------------------- header -------------------------- */
