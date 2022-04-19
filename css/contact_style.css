@@ -66,13 +66,17 @@ main .contact textarea{
     border: 1px solid #ccc;
 }
 
-main .contact input:last-child{
+main .contact .submit_data{
     width: 100px;
     height: 40px;
     margin-top: 40px;
     background-color: #000;
     color: #fff;
     line-height: 1.6;
+}
+
+main .contact .submit_data:hover{
+    cursor: pointer;
 }
 
 
