@@ -2,8 +2,6 @@
 let gotop = document.getElementById("gotop");
 
 gotop.addEventListener("click", function(){
-    //document.body.scrollTop = 0; // For Safari
-    //document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
     let current_high = window.scrollY;
     let hight_cut = current_high / 100;
