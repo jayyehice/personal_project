@@ -148,8 +148,12 @@ a{
 
     border-radius: 5px;
 
-    /* display: none; */
+    display: none;
     transition: all 1s;
+}
+
+#gotop:hover{
+    cursor: pointer;
 }
 
 #gotop::before{
@@ -644,6 +648,16 @@ footer .icon{
 
 footer .icon img{
     height: 55px;
+}
+
+footer .icon a:first-child img:hover{
+    background-color: #3CB156;
+    border-radius: 10px;
+}
+
+footer .icon a:last-child img:hover{
+    background-color: #375799;
+    border-radius: 5px;
 }
 
 footer section{
