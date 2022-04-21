@@ -62,21 +62,25 @@ main .customization .wrapper850{
     width: 150px;
     display: block;
     /* margin-bottom: 20px; */
+    transition: all 1s;
 }
 
 #show_box #input_word_show_box #input_word_show_1{
-    top: 4px;
-    left: 2px;
-}
-
-#show_box #input_word_show_box #input_word_show_2{
+    /* top: 5px; */
     top: 35px;
     left: 2px;
 }
 
-#show_box #input_word_show_box #input_word_show_3{
-    top: 66px;
+#show_box #input_word_show_box #input_word_show_2{
+    /* top: 35px; */
+    top: 50px;
     left: 2px;
+}
+
+#show_box #input_word_show_box #input_word_show_3{
+    top: 65px;
+    left: 2px;
+    
 }
 
 
@@ -146,6 +150,9 @@ main .customization li div input{
     font-family: '微軟正黑體', 'Noto Sans TC', sans-serif;
 }
 
+main .customization li div input:last-child{
+    margin-bottom: 0;
+}
 
 
 
