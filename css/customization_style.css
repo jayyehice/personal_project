@@ -9,7 +9,7 @@ main .customization .wrapper850{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 400px;
+    height: 500px;
     margin-top: 30px;
 }
 
@@ -22,14 +22,14 @@ main .customization .wrapper850{
     border-radius: 5px;
 }
 
-#intro_img{
+#show_box #intro_img{
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
-#show_logo{
+#show_box #show_logo{
     height: 70px;
     position: absolute;
     top: 148px;
@@ -37,6 +37,49 @@ main .customization .wrapper850{
     /* border: 1px solid #000; */
     z-index: 1;
 }
+
+#show_box #input_word_show_box{
+    width: 155px;
+    height: 94px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+
+    position: absolute;
+
+    top: 137px;
+    left: 65px;
+}
+
+#show_box #input_word_show_box p{
+    text-align: center;
+    color: #fff;
+
+    position: absolute;
+
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    line-height: 20px;
+    width: 150px;
+    display: block;
+    /* margin-bottom: 20px; */
+}
+
+#show_box #input_word_show_box #input_word_show_1{
+    top: 4px;
+    left: 2px;
+}
+
+#show_box #input_word_show_box #input_word_show_2{
+    top: 35px;
+    left: 2px;
+}
+
+#show_box #input_word_show_box #input_word_show_3{
+    top: 66px;
+    left: 2px;
+}
+
+
 
 main .customization ul{
     /* border: 1px solid #000; */
@@ -97,6 +140,13 @@ main .customization li div p:before{
     height: 16px;
     border-radius: 50%;
 } 
+
+main .customization li div input{
+    margin-bottom: 10px;
+    font-family: '微軟正黑體', 'Noto Sans TC', sans-serif;
+}
+
+
 
 
 /* real ref */
