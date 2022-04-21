@@ -91,7 +91,47 @@ for(let i=0; i<3; i++){
 
 }
 
+let input_word_left1 = document.getElementById("input_word_left1");
+let input_word_center1 = document.getElementById("input_word_center1");
+let input_word_right1 = document.getElementById("input_word_right1");
+let input_word_left2 = document.getElementById("input_word_left2");
+let input_word_center2 = document.getElementById("input_word_center2");
+let input_word_right2 = document.getElementById("input_word_right2");
+let input_word_left3 = document.getElementById("input_word_left3");
+let input_word_center3 = document.getElementById("input_word_center3");
+let input_word_right3 = document.getElementById("input_word_right3");
+
+let input_word_align = {
+    0 : [input_word_left1, input_word_center1, input_word_right1],
+    1 : [input_word_left2, input_word_center2, input_word_right2],
+    2 : [input_word_left3, input_word_center3, input_word_right3]
+};
+
+for(let i=0; i<3; i++){
+    for(let j=0; j<3; j++){
+        input_word_align[i][j].addEventListener("click", function(){
+            if(j === 0){
+                input_word_show[i].style.textAlign = "left";
+            }else if(j === 1){
+                input_word_show[i].style.textAlign = "center";
+            }else{
+                input_word_show[i].style.textAlign = "right";
+            }
+        });
+    }
+}
 
 
 
 
+
+
+let show_logo_up = document.getElementById("show_logo_up");
+let show_logo_down = document.getElementById("show_logo_down");
+let show_logo_left = document.getElementById("show_logo_left");
+let show_logo_right = document.getElementById("show_logo_right");
+
+show_logo_up.addEventListener("click", function(){
+    console.log(show_logo.style.top)
+    // if(show_logo.style.top > )
+});

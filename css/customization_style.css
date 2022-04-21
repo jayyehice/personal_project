@@ -32,16 +32,17 @@ main .customization .wrapper850{
 #show_box #show_logo{
     height: 70px;
     position: absolute;
-    top: 148px;
-    left: 65px;
+    top: 138px;
+    left: 66px;
     /* border: 1px solid #000; */
     z-index: 1;
+    max-height: 50px;
 }
 
 #show_box #input_word_show_box{
     width: 155px;
     height: 94px;
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     box-sizing: border-box;
 
     position: absolute;
@@ -122,7 +123,7 @@ main .customization li div{
     align-items: center;
     
     flex-wrap: wrap;
-    width: 210px;
+    width: 240px;
     /* border: 1px solid #000; */
 }
 
@@ -153,6 +154,18 @@ main .customization li div input{
 main .customization li div input:last-child{
     margin-bottom: 0;
 }
+
+
+main .customization li i{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+main .customization li i:hover{
+    cursor: pointer;
+}
+
 
 
 
