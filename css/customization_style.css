@@ -20,6 +20,7 @@ main .customization .wrapper850{
     position: relative;
     border: 3px solid #F5F5F7;
     border-radius: 5px;
+    box-shadow: 1px 1px 6px #333;
 }
 
 #show_box #intro_img{
@@ -32,17 +33,18 @@ main .customization .wrapper850{
 #show_box #show_logo{
     height: 70px;
     position: absolute;
-    top: 138px;
-    left: 66px;
+    top: 157px;
+    left: 89px;
     /* border: 1px solid #000; */
     z-index: 1;
     max-height: 50px;
+    
 }
 
 #show_box #input_word_show_box{
     width: 155px;
     height: 94px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     box-sizing: border-box;
 
     position: absolute;
@@ -166,6 +168,21 @@ main .customization li i:hover{
     cursor: pointer;
 }
 
+#show_logo_up,#show_logo_down,#show_logo_left,#show_logo_right{
+    opacity: .5;
+}
+
+#input_word_left1, #input_word_left2, #input_word_left3{
+    opacity: .5;
+}
+
+#input_word_right1, #input_word_right2, #input_word_right3{
+    opacity: .5;
+}
+
+main .customization li div span{
+    margin-bottom: 10px;
+}
 
 
 

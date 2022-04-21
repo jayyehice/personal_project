@@ -9,17 +9,7 @@ let show_logo = document.getElementById("show_logo");
 // });
 
 
-let file_upload = document.getElementById("file_upload");
 
-file_upload.addEventListener("change", function(){
-    
-    let reader = new FileReader();
-    reader.readAsDataURL(this.files[0]);
-    reader.addEventListener("load", function(){
-        //console.log(this.result);
-        show_logo.src = this.result;
-    });
-});
 
 
 let input_word1 = document.getElementById("input_word1");
@@ -112,10 +102,34 @@ for(let i=0; i<3; i++){
         input_word_align[i][j].addEventListener("click", function(){
             if(j === 0){
                 input_word_show[i].style.textAlign = "left";
+
+                for(let k=0;k<3;k++){
+                    if(k===j){
+                        input_word_align[i][k].style.opacity = 1;
+                    }else{
+                        input_word_align[i][k].style.opacity = .5;
+                    }
+                }
+
+            
             }else if(j === 1){
                 input_word_show[i].style.textAlign = "center";
+                for(let k=0;k<3;k++){
+                    if(k===j){
+                        input_word_align[i][k].style.opacity = 1;
+                    }else{
+                        input_word_align[i][k].style.opacity = .5;
+                    }
+                }
             }else{
                 input_word_show[i].style.textAlign = "right";
+                for(let k=0;k<3;k++){
+                    if(k===j){
+                        input_word_align[i][k].style.opacity = 1;
+                    }else{
+                        input_word_align[i][k].style.opacity = .5;
+                    }
+                }
             }
         });
     }
@@ -131,7 +145,83 @@ let show_logo_down = document.getElementById("show_logo_down");
 let show_logo_left = document.getElementById("show_logo_left");
 let show_logo_right = document.getElementById("show_logo_right");
 
+let show_logo_move = 2;
+
+let file_upload = document.getElementById("file_upload");
+
+file_upload.addEventListener("change", function(){
+    
+    let reader = new FileReader();
+    reader.readAsDataURL(this.files[0]);
+    reader.addEventListener("load", function(){
+        //console.log(this.result);
+        show_logo.src = this.result;
+    });
+
+    show_logo_up.style.opacity = 1;
+    show_logo_down.style.opacity = 1;
+    show_logo_left.style.opacity = 1;
+    show_logo_right.style.opacity = 1;
+
+});
+
+
 show_logo_up.addEventListener("click", function(){
-    console.log(show_logo.style.top)
-    // if(show_logo.style.top > )
+
+    if(file_upload.files.length !== 0){
+        //console.log(file_upload.files.length)
+        if(Number(show_logo.offsetTop) > 137 ){
+            show_logo.style.top = (Number(show_logo.offsetTop) - show_logo_move) + 'px';
+            if(show_logo_down.style.opacity === '0.5'){
+                show_logo_down.style.opacity = 1;
+            }
+        }else{
+            this.style.opacity = .5;
+        }
+    }
+});
+
+show_logo_down.addEventListener("click", function(){
+
+    if(file_upload.files.length !== 0){
+        //console.log(show_logo.offsetTop)
+        if(Number(show_logo.offsetTop) < 178 ){
+            show_logo.style.top = (Number(show_logo.offsetTop) + show_logo_move) + 'px';
+            if(show_logo_up.style.opacity === '0.5'){
+                show_logo_up.style.opacity = 1;
+            }
+        }else{
+            this.style.opacity = .5;
+        }
+    }
+});
+
+show_logo_left.addEventListener("click", function(){
+
+    if(file_upload.files.length !== 0){
+        // console.log(show_logo.offsetLeft)
+        if(Number(show_logo.offsetLeft) > 65 ){
+            show_logo.style.left = (Number(show_logo.offsetLeft) - show_logo_move) + 'px';
+            if(show_logo_right.style.opacity === '0.5'){
+                show_logo_right.style.opacity = 1;
+            }
+        }else{
+            this.style.opacity = .5;
+        }
+    }
+});
+
+show_logo_right.addEventListener("click", function(){
+
+    if(file_upload.files.length !== 0){
+        // console.log(show_logo.offsetLeft)
+        if(Number(show_logo.offsetLeft) < 112 ){
+            show_logo.style.left = (Number(show_logo.offsetLeft) + show_logo_move) + 'px';
+            if(show_logo_left.style.opacity === '0.5'){
+                show_logo_left.style.opacity = 1;
+            }
+        }else{
+            this.style.opacity = .5;
+        }
+    }
 });
