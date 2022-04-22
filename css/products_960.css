@@ -1,0 +1,8 @@
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    main .products ol li{
+        width: 285px;
+    }
+    main .products ol li:first-child{
+        width: 95px;
+    }
+}

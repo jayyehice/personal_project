@@ -1,0 +1,25 @@
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+
+    /* intro */
+    main .intro .wrapper{
+        justify-content:flex-start;
+    }
+
+    main .intro .wrapper div{
+        width: 180px;
+        height: 180px;
+        margin-left: 90px;
+    }
+
+
+
+    /* slide */
+    main .slider{
+        display: block;
+    }
+
+    /* animation */
+    main .animationstop .wrapper{
+        display: none;
+    }
+}

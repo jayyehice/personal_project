@@ -1,0 +1,34 @@
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    main .package ul{
+        width: 820px;
+    }
+
+    main .package li img{
+        width: 400px;
+    }
+
+    main .package li div{
+        width: 400px;
+        height: 289px;
+    }
+
+    main .package li div{
+        padding: 25px 0;
+    }
+
+    main .package li:nth-child(odd) div{
+        padding-left: 80px;
+    }
+
+    main .package li:nth-child(even) div{
+        padding-right: 80px;
+    }
+
+    main .package li:nth-child(odd) a:hover img{    
+        transform: none;
+    }
+    
+    main .package li:nth-child(even) a:hover img{    
+        transform: none;
+    }
+}

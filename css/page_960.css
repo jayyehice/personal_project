@@ -1,0 +1,9 @@
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    main .page_intro img{
+        height: 200px;
+    }
+
+    main .page_intro .wrapper850{
+        /* width: 900px; */
+    }
+}
