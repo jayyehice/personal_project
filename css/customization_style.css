@@ -35,7 +35,7 @@ main .customization .wrapper850{
     position: absolute;
     top: 157px;
     left: 89px;
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     z-index: 1;
     max-height: 50px;
     
@@ -44,7 +44,7 @@ main .customization .wrapper850{
 #show_box #input_word_show_box{
     width: 155px;
     height: 94px;
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     box-sizing: border-box;
 
     position: absolute;
@@ -59,7 +59,7 @@ main .customization .wrapper850{
 
     position: absolute;
 
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     box-sizing: border-box;
     line-height: 20px;
     width: 150px;
@@ -152,6 +152,14 @@ main .customization li div input{
     margin-bottom: 10px;
     font-family: '微軟正黑體', 'Noto Sans TC', sans-serif;
 }
+
+#input_word1, #input_word2, #input_word3{
+    width: 115px;
+    text-align: center;
+    font-family: "微軟正黑體", 'Noto Sans TC', sans-serif;
+
+}
+
 
 main .customization li div input:last-child{
     margin-bottom: 0;

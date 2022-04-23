@@ -1,3 +1,22 @@
 @media screen and (min-width: 768px) and (max-width: 991.98px){
-    
+    main .page_product .show > img {
+        height: 340px;
+    }
+
+    main .page_product li img{
+        width: 100%;
+    }
+
+    main .page_intro img{
+        height: 180px;
+    }
+
+    main .page_intro li div{
+        width: 280px;
+    }
+
+    main .page_intro li > p:first-child {
+        width: 120px;
+    }
+
 }

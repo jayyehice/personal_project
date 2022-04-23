@@ -152,70 +152,6 @@ main .page_intro li div p:before{
 }
 
 
-
-/* switch id*/
-
-/* #switch{
-    display: inline-block;
-    width: 66px;
-    height: 20px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    margin-left: 20px;
-}
-
-#switch span{
-    display: block;
-    position: absolute;
-
-}
-
-#switch_open{
-    width: 65px;
-    background-color: #333;
-    color: #fff;
-    line-height: 20px;
-    padding-left: 10px;
-    display: none;
-}
-
-#switch_close{
-    top: 0px;
-    left: -1px;
-    width: 75px;
-    line-height: 20px;
-    background-color: #F5F5F7;
-    color: #000;
-    border-radius: 10px;
-    padding-left: 28px;
-    box-sizing: border-box;
-    transition: all .5s ease-in;
-}
-
-#switch_circle{
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid #999;
-    top: 2.5px;
-    left: 6px;
-    transition: all .5s ease-in;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 /* may like */
 
 main .may_like{
@@ -231,7 +167,13 @@ main .may_like .wrapper850{
     box-sizing: border-box;
 }
 
+main .may_like a{
+    width: 30%;
+}
+
 main .may_like img{
-    height: 150px;
+    /* height: 150px; */
+    width: 100%;
     border: 3px solid #F5F5F7;
+    box-sizing: border-box;
 }

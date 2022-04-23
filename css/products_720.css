@@ -1,3 +1,19 @@
 @media screen and (min-width: 768px) and (max-width: 991.98px){
     
+    main .products .prod li:first-child{
+        justify-content:left;
+    }
+
+    main .products ol li{
+        width: 216px;
+    }
+    main .products ol li:first-child{
+        width: 72px;
+    }
+
+    main .products ol li:first-child h4{
+        /* writing-mode:vertical-lr; */
+        font-size: 20px;
+        /* text-align-last: left; */
+    }
 }

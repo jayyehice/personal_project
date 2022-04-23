@@ -1,3 +1,66 @@
 @media screen and (min-width: 768px) and (max-width: 991.98px){
+    body{
+        min-width: 720px;
+    }
+
+    .wrapper{
+        max-width: 720px;
+    }
     
+    .wrapper850{
+        max-width: 720px;
+    }
+
+
+    /* header */
+
+    header ul{
+        width: 500px;
+    }
+
+    header li{
+        background-image: none;
+    }
+
+    /* footer */
+    footer section{
+        max-width: 720px;
+    }
+
+    footer section span{
+        margin-left: 0px;
+    }
+
+
+    /* links */
+
+    .links .wrapper{
+        padding: 50px 0;
+    }
+    
+    main .links a{
+        height: 220px;
+        width: 220px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    /* slider */
+    main .slider ul li{
+        background-size: contain;
+        height: 470px;
+    }
+
+
+    .subtitle h2{
+        line-height: 60px;
+    }
+
+    .subtitle_animation h2::before{
+        transform:none;    
+    }
+    
+    .subtitle_animation h2::after{
+        transform: none;   
+    }
 }

@@ -17,4 +17,10 @@
     footer section{
         max-width: 950px;
     }
+
+    /* slider */
+    main .slider ul li{
+        background-size: contain;
+        height: 610px;
+    }
 }

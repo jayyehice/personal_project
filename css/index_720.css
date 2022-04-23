@@ -1,3 +1,94 @@
 @media screen and (min-width: 768px) and (max-width: 991.98px){
-    
+    /* slider */
+    main .slider{
+        display: block;
+    }
+
+    /* animation */
+    main .animationstop .wrapper{
+        display: none;
+    }
+
+    /* banner1 */
+    main .banner1 .wrapper div{
+        right: 0px;
+        height: 160px;
+        width: 70%;
+        padding-top: 22px;
+        padding-right: 67px;
+    }
+    main .banner1 .wrapper img:first-child{
+        left: 0px;
+        width: 90%;
+
+    }
+
+    main .banner1 .wrapper img:nth-child(2){
+        display: none;
+    }
+
+    main .banner1 h3{
+        margin-bottom: 10px;
+    }
+
+    /* hot sale */
+    main .hot_sale .subtitle{
+        position: static;
+    }
+
+    main .hot_sale ul{
+        height: auto;
+    }
+
+    main .hot_sale li{
+        width: 48%;
+        margin-top: 0;
+        position:relative;
+        top: 0px;
+        margin-bottom: 30px;
+    }
+
+    main .hot_sale li:before{
+        width: 90%;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%) ;
+    }
+
+    main .hot_sale li:after{
+        left: 34%;
+    }
+
+    main .hot_sale ul li:nth-child(2) {
+        margin-top: 0;
+    }
+
+    main .hot_sale ul li:nth-child(3) {
+        margin-top: 0;
+        display: none;
+    }
+
+    main .hot_sale li:before{
+        z-index: 0;
+    }
+
+    main .hot_sale .read_more{
+        display: block;
+    }
+
+    /* banner2 */
+    main .banner2{
+        background-size: contain;
+    }
+
+    main .banner2 h3:last-child {
+        width: 350px;
+    }
+
+    /* links */
+    main .links a h2{
+        width: 200px;
+        line-height: 200px;
+    }
 }
