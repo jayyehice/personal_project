@@ -31,20 +31,21 @@ main .customization .wrapper850{
 }
 
 #show_box #show_logo{
-    height: 70px;
+    max-height: 75%;
+    max-width: 70%;
     position: absolute;
-    top: 157px;
-    left: 89px;
-    border: 1px solid #000;
+    top: 20px;
+    left: 25px;
+    /* border: 1px solid #000; */
     z-index: 1;
     max-height: 50px;
     
 }
 
 #show_box #input_word_show_box{
-    width: 155px;
-    height: 94px;
-    border: 1px solid #000;
+    width: 41%;
+    height: 25%;
+    /* border: 1px solid #000; */
     box-sizing: border-box;
 
     position: absolute;
@@ -59,31 +60,13 @@ main .customization .wrapper850{
 
     position: absolute;
 
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     box-sizing: border-box;
     line-height: 20px;
-    width: 150px;
+    width: 95%;
     display: block;
-    /* margin-bottom: 20px; */
     transition: all 1s;
-}
-
-#show_box #input_word_show_box #input_word_show_1{
-    /* top: 5px; */
-    top: 35px;
-    left: 2px;
-}
-
-#show_box #input_word_show_box #input_word_show_2{
-    /* top: 35px; */
-    top: 50px;
-    left: 2px;
-}
-
-#show_box #input_word_show_box #input_word_show_3{
-    top: 65px;
-    left: 2px;
-    
+    left: 5px;
 }
 
 

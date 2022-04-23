@@ -17,4 +17,19 @@
         width: 340px;
         height: 340px;
     }
+
+
+    #show_box #show_logo{
+        top: 19px;
+        left: 20px;
+    }
+
+    #show_box #input_word_show_box{
+        top: 124px;
+        left: 55px;
+    }
+
+    #show_box #input_word_show_box p{
+        left: 3px;
+    }
 }
