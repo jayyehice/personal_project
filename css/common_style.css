@@ -267,12 +267,17 @@ header nav{
     box-sizing: border-box;
 }
 
+header nav img{
+    display: none;
+}
+
 header ul{
     display: flex;
     width: 650px;
     height: 18px;
     flex-wrap: wrap;
     /* border: 1px solid #000; */
+    transition: all 1s;
     
 }
 
