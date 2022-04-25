@@ -1,3 +1,166 @@
 @media screen and (max-width: 575.98px){
+    body{
+        min-width: 100%;
+    }
+
+    .wrapper{
+        max-width: 100%;
+    }
     
+    .wrapper850{
+        max-width: 100%;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
+
+    .small_logo {
+        max-width: 100%;
+    }
+
+    .small_logo img {
+        width: 100%;
+    }
+
+    /* header */
+    .wrapper header {
+        display: block;
+    }
+
+    .wrapper header .small_logo {
+        margin-left: 20px;
+    }
+
+    header nav {
+        width: 100%;
+        
+        /* padding-top: 10px; */
+        position: relative;
+    }
+
+
+    header nav img{
+        display: block;
+        height: 50px;
+        /* margin-left: auto;
+        margin-bottom: 10px; */
+        position: absolute;
+        right: 20px;
+        top: -45px;
+    }
+
+    
+
+    header ul{
+        /* width: 160px; */
+        width: 100%;
+        /* height: 205px; */
+        height: 0px;
+        position: absolute;
+        right: 0px;
+        top: 11px;
+        border-radius: 3px;
+        /* opacity: 0;
+        display: none; */
+        overflow: hidden;
+        
+        z-index: 1;
+
+    }
+
+    header li{
+        background-image: none;
+        width: 100%;
+        line-height: 40px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #808080;
+        background-color: #F5F5F7;
+    }
+
+    header li a{
+        color: #000;
+    }
+    /* footer */
+    footer section{
+        max-width: 70%;
+    }
+
+    footer section span{
+        margin-left: 0px;
+    }
+
+    footer .wrapper {
+        padding: 30px 0;
+        display: block;
+    }
+
+    footer .small_logo {
+        /* flex-grow: 1; */
+        width: 130px;
+    }
+
+    footer .icon{
+        /* flex-grow: 0.2; */
+        display: none;
+    }
+
+    footer p{
+        display: block;
+        text-align: center;
+
+
+    }
+
+    footer .small_logo img {
+        display: none;
+    }
+
+
+
+    /* links */
+
+    .links .wrapper{
+        padding: 50px 0;
+        justify-content: center;
+        width: 70%;
+    }
+    
+    main .links a{
+        /* flex-grow: 1; */
+        clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+        height: 140px;
+        width: 140px;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    /* slider */
+    main .slider ul li{
+        background-size: contain;
+        height: 470px;
+    }
+
+
+    .subtitle h2{
+        line-height: 60px;
+    }
+
+    .subtitle_animation h2::before{
+        transform:none;    
+    }
+    
+    .subtitle_animation h2::after{
+        transform: none;   
+    }
+
+    .subtitle {
+        margin: 0 auto 40px;
+    }
 }

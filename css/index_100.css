@@ -1,3 +1,155 @@
 @media screen and (max-width: 575.98px){
-    
+     /* slider */
+     main .slider{
+        display: block;
+    }
+
+    /* animation */
+    main .animationstop .wrapper{
+        display: none;
+    }
+
+    /* banner1 */
+    main .banner1 .wrapper {
+        height: 350px;
+    }
+
+    main .banner1 .wrapper div{
+        right: 0px;
+        bottom: 1%;
+        height: auto;
+        max-width: 90%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        clip-path: none;
+        flex-wrap: wrap;
+        /* position: static; */
+    }
+    main .banner1 .wrapper img:first-child{
+        left: 0px;
+        max-width: 100%;
+        position: static;
+
+    }
+
+    main .banner1 .wrapper img:nth-child(2){
+        display: none;
+    }
+
+    main .banner1 h3{
+        margin: 0px;
+        margin-left: 4%;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* hot sale */
+    main .hot_sale .wrapper {
+        padding-bottom: 30px;
+    }
+
+    main .hot_sale .subtitle{
+        position: static;
+    }
+
+    main .hot_sale ul{
+        height: auto;
+        justify-content: center;
+    }
+
+    main .hot_sale li{
+        max-width: 250px;
+        height: 380px;
+        margin-top: 0;
+        position:relative;
+        top: 0px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    main .hot_sale li:before{
+        width: 83%;
+        top: 50%;
+        left: 50%;
+        height: 340px;
+        transform: translate(-50%, -50%) ;
+    }
+
+    main .hot_sale li:after{
+        left: 29%;
+        top: 130px;
+    }
+
+    main .hot_sale ul li:nth-child(2) {
+        margin-top: 0;
+    }
+
+    main .hot_sale ul li:nth-child(3) {
+        margin-top: 0;
+        display: none;
+    }
+
+    main .hot_sale li:before{
+        z-index: 0;
+    }
+
+    main .hot_sale .read_more{
+        display: block;
+        margin: 0 auto;
+    }
+
+    main .hot_sale li img {
+        width: 50%;
+        top: 70%;
+    }
+
+    /* banner2 */
+    main .banner2{
+        background-size: contain;
+        height: 280px;
+        background-position: right bottom;
+        
+    }
+
+    main .banner2 .wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    main .banner2 h3 {
+        margin-top:30px;
+        margin-left: 20px;
+    }
+
+    main .banner2 h3:last-child {
+        width: auto;
+        height: auto;
+        /* background-color:  transparent;
+        background: none; 
+        color: black; */
+        line-height: 1;
+        flex-grow: 1;
+    }
+
+    /* news */
+    main .news .subtitle h2 {
+        margin-top: 30px;
+    }
+
+    main .news .wrapper {
+        padding-bottom: 40px;
+    }
+
+    /* links */
+    /* main .links a{
+        width: 130px;
+        height: 130px;
+    } */
+
+    main .links a h2{
+        width: 120px;
+        line-height: 120px;
+    }
 }

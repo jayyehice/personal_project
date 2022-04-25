@@ -11,6 +11,13 @@
         max-width: 540px;
     }
 
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 40px;
+    }
 
     /* header */
     .wrapper header {
@@ -130,5 +137,9 @@
     
     .subtitle_animation h2::after{
         transform: none;   
+    }
+
+    .subtitle {
+        margin: 0 auto 40px;
     }
 }
