@@ -136,8 +136,9 @@ main .links a{
 
 .breadcrumb ul{
     display: flex;
-    width: 250px;
+    max-width: 250px;
     padding: 40px 0;
+    flex-wrap: wrap;
 }
 
 .breadcrumb li{
