@@ -1,3 +1,69 @@
 @media screen and (min-width: 576px) and (max-width: 767.98px){
+
+    main .customization {
+        /* width: 100%; */
+    }
+
+    main .customization .wrapper850 {
+        flex-direction: column;
+
+        height: auto;
+        margin: 30px auto;
+    }
+
+    main .customization ul {
+        width: 350px;
+    }
+
+    main .customization li div{
+        width: 200px;
+    }
+
+    main .customization li > p:first-child {
+        margin-right: 20px;
+    }
+
     
+
+    #show_box{
+        width: 380px;
+        height: 380px;
+
+        margin-bottom: 100px;
+        clear:both;
+    }
+
+
+    #show_box #show_logo{
+        top: 19px;
+        left: 20px;
+    }
+
+    #show_box #input_word_show_box{
+        top: 138px;
+        left: 65px;
+
+        /* border: 1px solid #000; */
+    }
+
+    #show_box #input_word_show_box p{
+        left: 3px;
+    }
+
+    main .real_ref .wrapper850{
+        width: 90%;
+        padding-bottom: 30px;
+    }
+
+    main .real_ref ul {
+        /* justify-content: center; */
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main .real_ref li {
+        margin-left: 0;
+    }
+
+ 
 }

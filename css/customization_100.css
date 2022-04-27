@@ -1,3 +1,66 @@
 @media screen and (max-width: 575.98px){
+    main .customization {
+        /* width: 100%; */
+    }
+
+    main .customization .wrapper850 {
+        flex-direction: column;
+
+        height: auto;
+        margin: 30px auto;
+    }
+
+    main .customization ul {
+        width: 350px;
+    }
+
+    main .customization li div{
+        width: 200px;
+    }
+
+    main .customization li > p:first-child {
+        margin-right: 20px;
+    }
+
     
+
+    #show_box{
+        width: 280px;
+        height: 280px;
+
+        margin-bottom: 60px;
+        clear:both;
+    }
+
+
+    #show_box #show_logo{
+        top: 19px;
+        left: 20px;
+    }
+
+    #show_box #input_word_show_box{
+        top: 103px;
+        left: 47px;
+
+        /* border: 1px solid #000; */
+    }
+
+    #show_box #input_word_show_box p{
+        left: 3px;
+    }
+
+    main .real_ref .wrapper850{
+        width: 90%;
+        padding-bottom: 30px;
+    }
+
+    main .real_ref ul {
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main .real_ref li {
+        margin-left: 0;
+    }
 }

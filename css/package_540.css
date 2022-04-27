@@ -1,3 +1,54 @@
 @media screen and (min-width: 576px) and (max-width: 767.98px){
+    main .package ul{
+        width: 100%;
+    }
+
+    main .package li {
+        margin-bottom: 60px;
+    }
+
+    main .package{
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    main .package li img{
+        width: 450px;
+    }
+
+    main .package li div{
+        width: 345px;
+        height: 249px;
+    }
+
+    main .package li div{
+        padding: 25px 0;
+    }
+
+
+    main .package li:nth-child(odd) div{
+        padding-left: 80px;
+    }
+
+    main .package li:nth-child(even) div{
+        padding-right: 80px;
+        order: 0;
     
+    }
+
+    main .package li a {
+        flex-wrap: wrap;
+    }
+
+    main .package li:nth-child(odd) a:hover img{    
+        transform: none;
+    }
+    
+    main .package li:nth-child(even) a:hover img{    
+        transform: none;
+    }
+
+    main .package li:nth-child(even) a{
+        justify-content: flex-end;
+    }
 }

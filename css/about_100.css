@@ -1,3 +1,27 @@
 @media screen and (max-width: 575.98px){
+    /* intro */
+    main .intro .wrapper{
+        justify-content:flex-start;
+    }
+
+    main .intro .wrapper div{
+        display: none;
+    }
     
+    main .intro p {
+        width: 100%;
+    }
+
+
+    /* slide */
+    main .slider{
+        display: block;
+    }
+
+    /* animation */
+    main .animationstop .wrapper{
+        display: none;
+    }
+
+
 }

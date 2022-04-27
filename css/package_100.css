@@ -1,3 +1,65 @@
 @media screen and (max-width: 575.98px){
+    main .package ul{
+        width: 100%;
+    }
+
+    main .package li {
+        margin-bottom: 60px;
+    }
+
+    main .package{
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    main .package li img{
+        width: 100%;
+    }
+
+    main .package li div{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+
+    main .package li:nth-child(odd) div{
+        padding-left: 20px;
+    }
+
+    main .package li:nth-child(even) div{
+        padding-right: 20px;
+        order: 0;
     
+    }
+
+    main .package li a {
+        flex-wrap: wrap;
+    }
+
+    main .package li:nth-child(odd) a:hover img{    
+        transform: none;
+    }
+    
+    main .package li:nth-child(even) a:hover img{    
+        transform: none;
+    }
+
+    main .package li:nth-child(odd) div {
+        clip-path: none;
+    }
+
+    main .package li:nth-child(even) div {
+        clip-path: none;
+        text-align: left;
+    }
+
+    main .package li:nth-child(even) a{
+        justify-content: flex-end;
+    }
+
+
+    main .package li div h4 {
+        text-align: center;
+    }
 }

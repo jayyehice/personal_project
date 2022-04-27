@@ -1,3 +1,37 @@
 @media screen and (min-width: 576px) and (max-width: 767.98px){
+    main .omo .wrapper iframe {
+        width: 300px;
+        height: 250px;
+    }
     
+    main .links a div{
+        width: 150px;
+        height: 150px;
+        padding: 25px;
+    }
+
+    main .links a div img{
+        width: 100px;
+    }
+
+    main .omo .wrapper {
+        flex-direction: column;
+    }
+
+    main .omo .wrapper div {
+        padding-left: 0;
+    }
+
+    main .omo .wrapper iframe {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    main .contact input {
+        width: 90%;
+    }
+
+    main .contact textarea {
+        width: 90%;
+    }
 }

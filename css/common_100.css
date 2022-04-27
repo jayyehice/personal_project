@@ -85,6 +85,12 @@
     header li a{
         color: #000;
     }
+
+    .breadcrumb ul {
+        padding-left: 20px;
+    }
+
+
     /* footer */
     footer section{
         max-width: 70%;
@@ -162,5 +168,15 @@
 
     .subtitle {
         margin: 0 auto 40px;
+    }
+
+
+
+    .cliper_path_left{
+        clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    }
+    
+    .cliper_path_right{
+        clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
     }
 }
