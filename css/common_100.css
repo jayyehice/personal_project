@@ -93,7 +93,7 @@
 
     /* footer */
     footer section{
-        max-width: 70%;
+        max-width: 374px;
     }
 
     footer section span{
@@ -101,26 +101,20 @@
     }
 
     footer .wrapper {
-        padding: 30px 0;
+        padding: 40px 0;
         display: block;
     }
 
-    footer .small_logo {
-        /* flex-grow: 1; */
-        width: 130px;
+    footer #footer_data{
+        margin: 0 auto;
+        /* max-width: 374px; */
     }
 
     footer .icon{
-        /* flex-grow: 0.2; */
+ 
         display: none;
     }
 
-    footer p{
-        display: block;
-        text-align: center;
-
-
-    }
 
     footer .small_logo img {
         display: none;

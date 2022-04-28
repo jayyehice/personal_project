@@ -329,6 +329,13 @@ footer .wrapper{
     flex-wrap: wrap;
 }
 
+footer #footer_data{
+    max-width: 374px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 footer .icon{
     height: 55px;
     width: 120px;
@@ -353,7 +360,7 @@ footer .icon a:last-child img:hover{
 }
 
 footer section{
-    width: 950px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
