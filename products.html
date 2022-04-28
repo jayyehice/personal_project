@@ -55,10 +55,18 @@
         <section class="products">
             <h2>產品分類</h2>
             <div class="wrapper">
+
+                <span class="switch">
+                    <span id="switch_open_size" class="switch_open">開啟</span>
+                    <span id="switch_close_size" class="switch_close">收合</span>
+                    <span id="switch_circle_size" class="switch_circle"></span>
+                </span>
+
                 <ul>
                     <li>
                         <ol>
                             <li class="space">
+                                
                             </li>
                             
                             <li class="prod_head">
@@ -79,7 +87,7 @@
                     <div>
                     <li>
                         
-                        <ol class="prod prod_h_1">
+                        <ol class="prod prod_h">
                             <li>
                                 <h4>旋轉碟</h4>
                                 
@@ -228,28 +236,6 @@
 	</footer>
 
     <script>
-        var prod = document.getElementsByClassName("prod");
-        var t = 0 ;
-
-        for(let i=0; i<prod.length; i++){
-
-            prod[i].addEventListener("click",function(){
-                for(let j=0; j<prod.length; j++){
-                    if(j === i){
-                        prod[j].style.height = "265px";
-                        prod[j].firstElementChild.style.backgroundColor ="#128BDB";
-                        prod[j].firstElementChild.style.color = "white";
-
-                    }else{
-                        prod[j].style.height = "30px";
-                        prod[j].firstElementChild.style.backgroundColor ="#EFEFF1";
-                        prod[j].firstElementChild.style.color = "black";
-                    }
-                }
-                
-            })
-            
-        }
     </script>
     <script src="./js/common.js"></script>
 </body>

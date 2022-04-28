@@ -21,6 +21,6 @@
     /* slider */
     main .slider ul li{
         background-size: contain;
-        height: 610px;
+        /* height: 610px; */
     }
 }

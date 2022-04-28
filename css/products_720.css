@@ -6,6 +6,7 @@
 
     main .products ol li{
         width: 216px;
+        
     }
     main .products ol li:first-child{
         width: 72px;
