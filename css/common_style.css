@@ -53,6 +53,19 @@ a{
     text-decoration: none;
 }
 
+a:link {
+    color: #000;
+}
+a:visited {
+    color: #000;
+}
+a:hover {
+    color: #000;
+}
+a:active {
+    color: #000;
+}
+
 .links .wrapper{
     padding: 100px 0;
     box-sizing: border-box;

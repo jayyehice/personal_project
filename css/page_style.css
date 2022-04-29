@@ -32,6 +32,7 @@ main .page_product .show > img{
     margin-bottom: 30px;
     border-radius: 3px;
     height: 400px;
+    box-sizing: border-box;
 }
 
 main .page_product li img{

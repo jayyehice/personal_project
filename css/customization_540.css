@@ -62,8 +62,15 @@
     }
 
     main .real_ref li {
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 
+    main .real_ref li{
+        width: 47%;
+    }
+
+    main .real_ref #light_box img {
+        width: 75%;
+    }
  
 }
