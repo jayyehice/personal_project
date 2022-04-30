@@ -34,9 +34,18 @@
 
     main .contact input {
         width: 90%;
+        font-size: 18px;
     }
 
     main .contact textarea {
         width: 90%;
+        font-size: 18px;
+    }
+
+    main .contact .submit_data {
+        width: 94%;
+        font-size: 18px;
+        height: auto;
+        line-height: 1.6;
     }
 }

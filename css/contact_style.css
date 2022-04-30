@@ -29,6 +29,10 @@ main .omo .wrapper div{
     margin-right: 10px;
 }
 
+.omo p a{
+    display: inline-block;
+}
+
 
 /* contact */
 main .contact{

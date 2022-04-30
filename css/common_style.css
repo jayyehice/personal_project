@@ -444,3 +444,16 @@ footer section a{
     color: #fff;
     line-height: 1.6;
 }
+
+footer section a:link {
+    color: #fff;
+}
+footer section a:visited {
+    color: #fff;
+}
+footer section a:hover {
+    color: #fff;
+}
+footer section a:active {
+    color: #fff;
+}

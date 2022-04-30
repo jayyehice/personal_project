@@ -23,5 +23,11 @@
         display: none;
     }
 
+    main .basic table td:first-child {
+        padding-left: 0px;
+        width: 30%;
+
+    }
+
 
 }

@@ -99,7 +99,7 @@ main .basic tbody tr{
 
 main .slider{
     /* border: 1px solid #000; */
-    margin-bottom: 110px;
+    margin-bottom: 60px;
     display: none;
 }
 
@@ -128,18 +128,17 @@ main .slider ul li:nth-child(2){
     background-image: url("../img/slider02.jpg");
 }
 
-main .slider ol{
+/* main .slider ol{
     width: 50px;
     margin: 10px auto;
-    /* border: 1px solid #000; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
-main .slider ol li{
+/* main .slider ol li{
     width: 16px;
     height: 16px;
     background-color: #000;
     border-radius: 50%;
-}
+} */
