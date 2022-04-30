@@ -17,6 +17,12 @@
     main .products ul > div{
         display: flex;
         overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    main .products ul > div ol{
+        transform: scale(0.8) perspective(1500px) rotateY(-45deg);
+        opacity: .4;
     }
 
     main .products ol li{
