@@ -143,12 +143,16 @@ function scroll_move(before, after){
 
 scroll_x_box.addEventListener("mouseup",e => {
     // console.log(scroll_x_box.scrollLeft);
-    scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft)
+    scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
 });
 
 scroll_x_box.addEventListener("touchend",e => {
     // console.log(scroll_x_box.scrollLeft);
-    scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft)
+    setTimeout(function(){
+        scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
+    },300);
+    
+    // console.log(scroll_x_box.scrollLeft);
 });
 
 // scroll_x_box.addEventListener("scroll", e => {

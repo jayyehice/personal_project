@@ -31,7 +31,7 @@ let page_products={
     "1":{
         "name":"旋轉碟", 
         "up_pic":["./img/page01.jpg", "./img/page02.jpg", "./img/page03.jpg", "./img/page04.jpg"],
-        "down_pic":["./img/usb/red_white.jpg", "./img/usb/intro_size.png", "./img/usb/intro_print_range.png"],
+        "down_pic":["./img/usb/red_white.jpg", "./img/usb/intro_size.png", "./img/usb/intro_print_range.png", "./img/usb/intro_size_horizontal.png", "./img/usb/intro_print_range_horizontal.png"],
         "color":[
                     ["red", "紅"], ["orange", "橘"], ["yellow", "黃"], 
                     ["green", "綠"], ["blue", "藍"], ["pink", "粉"], 
@@ -43,7 +43,7 @@ let page_products={
     "2":{
         "name":"鋁管碟", 
         "up_pic":["./img/products02.jpg", "", "", ""],
-        "down_pic":["./img/al/black.jpg", "./img/al/intro_size.png", "./img/al/intro_print_range.png"],
+        "down_pic":["./img/al/black.jpg", "./img/al/intro_size.png", "./img/al/intro_print_range.png", "./img/al/intro_size_horizontal.png", "./img/al/intro_print_range_horizontal.png"],
         "color":[["black", "黑"], ["silver", "銀"], ["purple", "紫"], ["red", "紅"]],
         "shell_color":[],
         "size_text":["60 x 17 x 7.5 mm", "35 x 12 mm"]
@@ -51,7 +51,7 @@ let page_products={
     "3":{
         "name":"迷你碟", 
         "up_pic":["./img/products03.jpg", "", "", ""],
-        "down_pic":["./img/mini/black.jpg", "./img/mini/intro_size.png", "./img/mini/intro_print_range.png"],
+        "down_pic":["./img/mini/black.jpg", "./img/mini/intro_size.png", "./img/mini/intro_print_range.png", "./img/mini/intro_size_horizontal.png", "./img/mini/intro_print_range_horizontal.png"],
         "color":[["black", "黑"]],
         "shell_color":[],
         "size_text":["34.5 x 12 x 4.5 mm", "10 x 28 mm"]
@@ -59,7 +59,7 @@ let page_products={
     "4":{
         "name":"小夜燈", 
         "up_pic":["./img/products04.jpg", "./img/products04-02.jpg", "", ""],
-        "down_pic":["./img/night/white.jpg", "./img/night/intro_size.png", "./img/night/intro_print_range.png"],
+        "down_pic":["./img/night/white.jpg", "./img/night/intro_size.png", "./img/night/intro_print_range.png", "./img/night/intro_size_horizontal.png", "./img/night/intro_print_range_horizontal.png"],
         "color":[["white", "白"]],
         "shell_color":[],
         "size_text":["47 x 26 x 14.5 mm", "20 x 30 mm"]
@@ -84,8 +84,13 @@ intro_img.src = page_products[prod_num]["down_pic"][0];
 intro_size.src = page_products[prod_num]["down_pic"][1];
 intro_print_range.src = page_products[prod_num]["down_pic"][2];
 
-//color
+if(window.innerWidth < 767.98){ //螢幕寬度低於768改方向
+    intro_size.src = page_products[prod_num]["down_pic"][3];
+    intro_print_range.src = page_products[prod_num]["down_pic"][4];
+}
 
+
+//color
 color_box.insertAdjacentHTML("beforeend", '<p class="color_btn" id="'+page_products[prod_num]["color"][0][0]+'">'+page_products[prod_num]["color"][0][1]+'</p>');
 
 for(let i=1; i<page_products[prod_num]["color"].length; i++){
