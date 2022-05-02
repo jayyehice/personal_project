@@ -33,7 +33,7 @@
     }
 
     .wrapper header .small_logo {
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     header nav {
@@ -48,7 +48,7 @@
         display: block;
         height: 50px;
         position: absolute;
-        right: 20px;
+        right: 10px;
         top: -45px;
     }
 
@@ -81,13 +81,15 @@
     }
 
     .breadcrumb ul {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
 
     /* footer */
     footer section{
         max-width: 374px;
+        padding: 0 10px;
+        font-size: 15px;
     }
 
     footer section span{
@@ -102,8 +104,12 @@
     footer #footer_data{
         margin: 0 auto;
         /* max-width: 374px; */
+        padding: 0 10px;
     }
 
+    footer #footer_data p{
+        font-size: 15px;
+    }
     footer .icon{
  
         display: none;

@@ -2,6 +2,7 @@
 
     main .page_product .wrapper850 {
         justify-content: center;
+        padding: 50px 10px;
     }
 
     main .page_intro .wrapper850 {
@@ -9,6 +10,18 @@
         justify-content: center;
         height: auto;
         /* margin-bottom: 200px; */
+    }
+
+    main .page_product h2{
+        padding-left: 10px;
+    }
+
+    main .page_intro h2{
+        padding-left: 10px;
+    }
+
+    main .may_like h2{
+        padding-left: 10px;
     }
 
     main .page_intro ul{
@@ -29,6 +42,7 @@
         height: auto;
         max-width: 100%;
         margin: 0 auto;
+        padding: 0 10px;
     }
 
     main .page_product li img{
@@ -53,5 +67,9 @@
 
     main .page_product aside {
         display: none;
+    }
+
+    main .may_like .wrapper850 {
+        padding: 40px 10px;
     }
 }

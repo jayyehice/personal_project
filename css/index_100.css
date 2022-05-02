@@ -142,6 +142,10 @@
         padding-bottom: 40px;
     }
 
+    main .news .news_table {
+        /* padding: 40px 20px; */
+    }
+
     /* links */
     /* main .links a{
         width: 130px;

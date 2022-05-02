@@ -115,7 +115,7 @@ main .slider ul li{
     flex-shrink: 0;
 }
 
-main .slider ul li{
+/* main .slider ul li{
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -126,7 +126,7 @@ main .slider ul li:first-child{
 
 main .slider ul li:nth-child(2){
     background-image: url("../img/slider02.jpg");
-}
+} */
 
 /* main .slider ol{
     width: 50px;

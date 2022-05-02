@@ -1,5 +1,9 @@
 @media screen and (max-width: 575.98px){
 
+    main .products .wrapper {
+        padding-left: 10px;
+    }
+
     main .products .prod li:first-child{
         justify-content:left;
     }

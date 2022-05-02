@@ -100,7 +100,7 @@ main .page_intro #intro_size, #intro_print_range{
     top: 0;
     left: 0;
     opacity: 0;
-    transition: all .5s ease-in;
+    transition: all .2s ease-in;
 }
 
 main .page_intro li{

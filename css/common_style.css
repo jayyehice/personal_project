@@ -257,7 +257,7 @@ main .slider ol li:hover{
     border-radius: 10px;
     padding-left: 28px;
     box-sizing: border-box;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 
 .switch_circle{
@@ -268,7 +268,7 @@ main .slider ol li:hover{
     border: 1px solid #999;
     top: 2px;
     left: 6px;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 
 
@@ -365,7 +365,7 @@ header li{
     /* border: 1px solid #000; */
     flex-grow: 1;
     text-align: center;
-    background-image: url("../img/icon_sprite-04.png");
+    background-image: url("../img/icon_sprite.png");
     background-repeat: no-repeat;
     
 }

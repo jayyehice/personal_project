@@ -54,6 +54,7 @@ for(let i=0; i<switch_open.length; i++){
 let scroll_x_box = document.getElementById("scroll_x_box");
 
 let scroll_left_before = 0;
+let scroll_left_before_stop = 0;
 
 function remove_style(element_list){
     for(let i=0; i<element_list.length; i++){
@@ -141,22 +142,68 @@ function scroll_move(before, after){
     return scroll_x_box.scrollLeft;
 };
 
+let time_interval = null; 
+
 scroll_x_box.addEventListener("mouseup",e => {
     // console.log(scroll_x_box.scrollLeft);
     scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
+    // time_interval = setInterval(function(){
+    //     if(scroll_left_before_stop === scroll_x_box.scrollLeft){
+
+            
+
+    //         clearInterval(time_interval);
+    //         console.log("stop");
+    //         scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
+
+    //     }else{
+    //         scroll_left_before_stop = scroll_x_box.scrollLeft;
+    //     }
+    // }, 100);
 });
 
 scroll_x_box.addEventListener("touchend",e => {
     // console.log(scroll_x_box.scrollLeft);
-    setTimeout(function(){
-        scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
-    },300);
+    // setTimeout(function(){
+    //     scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
+    // },300);
+
+    time_interval = setInterval(function(){
+        if(scroll_left_before_stop === scroll_x_box.scrollLeft){
+
+            clearInterval(time_interval);
+            console.log("stop");
+            scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
+
+        }else{
+            scroll_left_before_stop = scroll_x_box.scrollLeft;
+        }
+    }, 100);
     
     // console.log(scroll_x_box.scrollLeft);
 });
 
 // scroll_x_box.addEventListener("scroll", e => {
-//     console.log(scroll_x_box.scrollLeft);
+//     // console.log('1', scroll_x_box.scrollLeft);
+//     // console.log('2', scroll_left_before_stop);
+
+//     // console.log('3', (scroll_x_box.scrollLeft - scroll_left_before_stop));
+    
+
+//     // scroll_left_before_stop = scroll_x_box.scrollLeft;
+
+//     time_interval = setInterval(function(){
+//         if(scroll_left_before_stop === scroll_x_box.scrollLeft){
+
+
+
+//             clearInterval(time_interval);
+//             console.log("stop");
+
+//         }else{
+//             scroll_left_before_stop = scroll_x_box.scrollLeft;
+//         }
+//     }, 100);
+
+
 // });
-
-

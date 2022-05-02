@@ -150,23 +150,23 @@ small_product4.addEventListener("click", function(){
 
 
 
-// intro_size
+// // intro_size
 
-intro_size_button.addEventListener("mouseover",function(){
-    intro_size.style.opacity = 1;
-})
+// intro_size_button.addEventListener("mouseover",function(){
+//     intro_size.style.opacity = 1;
+// })
 
-intro_size_button.addEventListener("mouseout",function(){
-    intro_size.style.opacity = 0;
-})
+// intro_size_button.addEventListener("mouseout",function(){
+//     intro_size.style.opacity = 0;
+// })
 
 
-// intro_print_range
+// // intro_print_range
 
-intro_print_range_button.addEventListener("mouseover",function(){
-    intro_print_range.style.opacity = 1;
-})
+// intro_print_range_button.addEventListener("mouseover",function(){
+//     intro_print_range.style.opacity = 1;
+// })
 
-intro_print_range_button.addEventListener("mouseout",function(){
-    intro_print_range.style.opacity = 0;
-})
+// intro_print_range_button.addEventListener("mouseout",function(){
+//     intro_print_range.style.opacity = 0;
+// })
