@@ -75,12 +75,15 @@
         <section class="contact">
             <h2>聯絡我們</h2>
             <div class="wrapper">
-                <input type="text" placeholder="姓名">
-                <input type="text" placeholder="電子信箱">
-                <input type="text" placeholder="電話">
-                <textarea name="" id="" cols="30" rows="10" placeholder="留言內容"></textarea>
-                <input class="submit_data" type="submit">
-                
+                <form action="https://docs.google.com/spreadsheets/d/1WZr-ecm4tiztuA7II-HEUXcWXBcv_9jNauVkTcnRg_A/edit#gid=0" method="get">
+                    
+                    <input type="text" placeholder="姓名" data-name="name">
+                    <input type="text" placeholder="電子信箱" data-name="email">
+                    <input type="text" placeholder="電話" data-name="tel">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="留言內容" data-name="content"></textarea>
+                    <input class="submit_data" type="button" value="送出">
+                </form>
+                <iframe src="" frameborder="0"></iframe>
             </div>
         </section>
 
@@ -153,5 +156,7 @@
 	</footer>
 
     <script src="./js/common.js"></script>
+    <script src="./vender/is.min.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 </html>

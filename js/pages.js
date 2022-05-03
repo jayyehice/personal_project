@@ -1,6 +1,6 @@
 //查詢參數
 let search_obj = new URLSearchParams(location.search);
-let prod_num = search_obj.get("pages")
+let prod_num = search_obj.get("pages");
 
 //上方圖片
 let show_img = document.getElementById("show_img");
