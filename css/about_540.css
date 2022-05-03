@@ -12,6 +12,10 @@
         width: 100%;
     }
 
+    /* basic */
+    main .basic .basic_table {
+        padding: 20px;
+    }
 
     /* slide */
     main .slider{

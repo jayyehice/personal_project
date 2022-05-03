@@ -1,3 +1,7 @@
+header .current::after{
+    width: 115px;
+}
+
 
 /* intro */
 main .intro .wrapper{

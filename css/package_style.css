@@ -1,3 +1,7 @@
+header .current::after{
+    width: 110px;
+}
+
 
 main{
     background-image: url("../img/background_usb.png");

@@ -367,14 +367,28 @@ header li{
     text-align: center;
     background-image: url("../img/icon_sprite.png");
     background-repeat: no-repeat;
-    
+
+    padding-bottom: 8px;
+    position: relative;
 }
 
-header li:nth-child(2){ background-position: 0 -23px; }
-header li:nth-child(3){ background-position: 0 -46px; }
-/* header li:nth-child(4){ background-position: 0 -69px; } */
-header li:nth-child(4){ background-position: 0 -92px; }
-header li:nth-child(5){ background-position: 0 -115px; }
+header .current::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+
+    width: 105px;
+    height: 1.5px;
+    background-color: #000;
+}
+
+header li:nth-child(2){ background-position: 0 -33px; }
+header li:nth-child(3){ background-position: 0 -66px; }
+/* header li:nth-child(4){ background-position: 0 -99px; } */
+header li:nth-child(4){ background-position: 0 -132px; }
+header li:nth-child(5){ background-position: 0 -165px; }
+
 
 
 
