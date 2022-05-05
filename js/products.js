@@ -65,36 +65,39 @@ function remove_style(element_list){
 function scroll_move(before, after){
 
     if(after-before > 0){
-        if(after<199){
-            scroll_x_box.scrollLeft = 199;
+
+        if(after<219){
+            scroll_x_box.scrollLeft = 219;//199
             remove_style(prods);
             prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[1].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }else if(after<418){
-            scroll_x_box.scrollLeft = 418;
+        }else if(after<438){
+            scroll_x_box.scrollLeft = 438;//418
             remove_style(prods);
             prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[1].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[2].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }else if(after<637){
-            scroll_x_box.scrollLeft = 637;
+        }else if(after<657){
+            scroll_x_box.scrollLeft = 657;//637
             remove_style(prods);
             prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[1].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[2].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[3].setAttribute("style", "transform: scale(1); opacity: 1;");
         }
+
     }else if(after-before < 0){
-        if(after>610){
+
+        if(after>657){//610
             scroll_x_box.scrollLeft = 657;           
-        }else if(after>418){
-            scroll_x_box.scrollLeft = 418;
+        }else if(after>438){
+            scroll_x_box.scrollLeft = 438;
             remove_style(prods);
             prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[1].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[2].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }else if(after>199){
-            scroll_x_box.scrollLeft = 199;
+        }else if(after>219){
+            scroll_x_box.scrollLeft = 219;
             remove_style(prods);
             prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
             prods[1].setAttribute("style", "transform: scale(1); opacity: 1;");
@@ -106,104 +109,39 @@ function scroll_move(before, after){
 
     }
 
-    // if(after-before > 0){
-    //     if(after<219){
-    //         scroll_x_box.scrollLeft = 219;
-    //         prods[0].removeAttribute("style");
-    //         prods[1].setAttribute("style", "transform: scale(1);");
-    //     }else if(after<438){
-    //         scroll_x_box.scrollLeft = 438;
-    //         prods[1].removeAttribute("style");
-    //         prods[2].setAttribute("style", "transform: scale(1);");
-    //     }else if(after<657){
-    //         scroll_x_box.scrollLeft = 657;
-    //         prods[2].removeAttribute("style");
-    //         prods[3].setAttribute("style", "transform: scale(1);");
-    //     }
-    // }else if(after-before < 0){
-    //     if(after>657){
-    //         scroll_x_box.scrollLeft = 657;           
-    //     }else if(after>438){
-    //         scroll_x_box.scrollLeft = 438;
-    //         prods[3].removeAttribute("style");
-    //         prods[2].setAttribute("style", "transform: scale(1);");
-    //     }else if(after>219){
-    //         scroll_x_box.scrollLeft = 219;
-    //         prods[2].removeAttribute("style");
-    //         prods[1].setAttribute("style", "transform: scale(1);");
-    //     }else{
-    //         scroll_x_box.scrollLeft = 0;
-    //         prods[1].removeAttribute("style");
-    //         prods[0].setAttribute("style", "transform: scale(1);");
-    //     }
-
-    // }
     
     return scroll_x_box.scrollLeft;
 };
 
-let time_interval = null; 
 
-scroll_x_box.addEventListener("mouseup",e => {
-    // console.log(scroll_x_box.scrollLeft);
-    scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
-    // time_interval = setInterval(function(){
-    //     if(scroll_left_before_stop === scroll_x_box.scrollLeft){
 
-            
+let scroll_x_next = document.getElementById("scroll_x_next");
+let scroll_x_prev = document.getElementById("scroll_x_prev");
+let scroll_index = 0;
 
-    //         clearInterval(time_interval);
-    //         console.log("stop");
-    //         scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
+scroll_x_next.addEventListener("click", e => {
+    if(scroll_index !== (prods.length-2)){
+        remove_style(prods);
+        scroll_x_box.scrollLeft += 219;
 
-    //     }else{
-    //         scroll_left_before_stop = scroll_x_box.scrollLeft;
-    //     }
-    // }, 100);
+        scroll_index = Math.ceil(scroll_x_box.scrollLeft/219)+1;
+        //console.log(index);
+        prods[scroll_index].setAttribute("style", "transform: scale(1); opacity: 1;");
+        //console.log(scroll_x_box.scrollLeft);
+    }
 });
 
-scroll_x_box.addEventListener("touchend",e => {
-    // console.log(scroll_x_box.scrollLeft);
-    // setTimeout(function(){
-    //     scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
-    // },300);
+scroll_x_prev.addEventListener("click", e => {
+    //console.log(scroll_index);
 
-    time_interval = setInterval(function(){
-        if(scroll_left_before_stop === scroll_x_box.scrollLeft){
+    if(scroll_index !== 0){
+    
+        remove_style(prods);
+        scroll_x_box.scrollLeft -= 219;
 
-            clearInterval(time_interval);
-            console.log("stop");
-            scroll_left_before = scroll_move(scroll_left_before, scroll_x_box.scrollLeft);
-
-        }else{
-            scroll_left_before_stop = scroll_x_box.scrollLeft;
+        scroll_index = Math.ceil(scroll_x_box.scrollLeft/219) -1;
+        //console.log(scroll_x_box.scrollLeft);
+        //console.log(index);
+        prods[scroll_index].setAttribute("style", "transform: scale(1); opacity: 1;");
         }
-    }, 100);
-    
-    // console.log(scroll_x_box.scrollLeft);
 });
-
-// scroll_x_box.addEventListener("scroll", e => {
-//     // console.log('1', scroll_x_box.scrollLeft);
-//     // console.log('2', scroll_left_before_stop);
-
-//     // console.log('3', (scroll_x_box.scrollLeft - scroll_left_before_stop));
-    
-
-//     // scroll_left_before_stop = scroll_x_box.scrollLeft;
-
-//     time_interval = setInterval(function(){
-//         if(scroll_left_before_stop === scroll_x_box.scrollLeft){
-
-
-
-//             clearInterval(time_interval);
-//             console.log("stop");
-
-//         }else{
-//             scroll_left_before_stop = scroll_x_box.scrollLeft;
-//         }
-//     }, 100);
-
-
-// });

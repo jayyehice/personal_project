@@ -14,6 +14,18 @@ main .products .switch{
     margin-bottom: 20px;
 }
 
+main #scroll_x_control{
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin-left: auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+
+
 main .products h4{
     margin: auto;
 }
@@ -41,6 +53,10 @@ main .products ul{
     border-radius: 5px;
     text-align: center;
     /* border: 1px solid black; */
+}
+
+main .products #first_li,#last_li,#scroll_x_next,#scroll_x_prev{
+    display: none;
 }
 
 main .products .prod{

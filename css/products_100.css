@@ -18,10 +18,34 @@
         
     }
 
+    main .products #first_li,#last_li,#scroll_x_next,#scroll_x_prev{
+        display: block;
+        /* width: 60px; */
+    }
+
+    main #scroll_x_control{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    main #scroll_x_prev i{
+        margin-right: 10px;
+    }
+
+    main #scroll_x_next i{
+        margin-left: 10px;
+    }
+
+    main #scroll_x_prev:hover,#scroll_x_next:hover{
+        cursor: pointer;
+    }
+
+
     main .products ul > div{
         display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
+        scroll-behavior: smooth; 
+        overflow: hidden;
+        transition: all 2s;
     }
 
     main .products ul > div ol{

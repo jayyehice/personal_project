@@ -7,7 +7,8 @@
     <title>產品分類</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/products_style.css">
     <link rel="stylesheet" href="css/common_960.css">
@@ -62,7 +63,12 @@
                     <span id="switch_circle_size" class="switch_circle"></span>
                 </span>
 
+                <span id="scroll_x_control">
+                    <span id="scroll_x_prev"><i class="fa-solid fa-arrow-left"></i>PREV</span>
+                    <span id="scroll_x_next">NEXT<i class="fa-solid fa-arrow-right"></i></span>
+                </span>
                 <ul>
+                    
                     <li>
                         <ol>
                             <li class="space">
@@ -83,8 +89,10 @@
                             </li>
                         </ol>
                     </li>
-
+                    
                     <div id="scroll_x_box">
+                        
+
                         <li>
                             
                             <ol class="prod prod_h" style="transform: scale(1); opacity: 1;">
@@ -158,6 +166,7 @@
                                 </li>
                             </ol>
                         </li>
+
                         <li>
                             
                             <ol class="prod prod_h">
@@ -184,9 +193,52 @@
                                 </li>
                             </ol>
                         </li>
+                        
+                        <li>
+                            
+                            <ol class="prod prod_h">
+                                <li>
+                                    <h4>充電寶</h4>
+                                </li>
+                                <li class="check">
+                                    <a href="./pages.html?pages=5">
+                                        <img src="./img/products05-01.jpg" alt="">
+                                    </a>
+                                    
+
+                                </li>
+                                <li class="uncheck">
+                                    <!-- <img src="./img/products01.jpg" alt=""> -->
+
+                                </li>
+                                <li class="uncheck">
+                                    <!-- <img src="./img/products01.jpg" alt=""> -->
+
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li id="last_li">
+                            
+                            <ol class="prod prod_h">
+                                <li>
+                                    <h4></h4>
+                                </li>
+                                <li class="uncheck">
+
+                                </li>
+                                <li class="uncheck">                                    
+
+                                </li>
+                                <li class="uncheck">
+
+                                </li>
+                            </ol>
+                        </li>
 
                     </div>
                 </ul>
+                
             </div>
         </section>
 

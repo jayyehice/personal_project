@@ -63,6 +63,14 @@ let page_products={
         "color":[["white", "白"]],
         "shell_color":[],
         "size_text":["47 x 26 x 14.5 mm", "20 x 30 mm"]
+    },
+    "5":{
+        "name":"充電寶", 
+        "up_pic":["./img/products05-01.jpg", "./img/products05-02.jpg", "./img/products05-03.jpg", "./img/products05-04.jpg"],
+        "down_pic":["./img/power_bank/black.jpg", "./img/power_bank/intro_size.png", "./img/power_bank/intro_print_range.png", "./img/power_bank/intro_size_horizontal.png", "./img/power_bank/intro_print_range_horizontal.png"],
+        "color":[["black", "黑"]],
+        "shell_color":[],
+        "size_text":["90 x 60 x 20 mm", "30 x 40 mm"]
     }
 };
 
