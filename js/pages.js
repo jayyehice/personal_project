@@ -70,7 +70,7 @@ let page_products={
         "down_pic":["./img/power_bank/black.jpg", "./img/power_bank/intro_size.png", "./img/power_bank/intro_print_range.png", "./img/power_bank/intro_size_horizontal.png", "./img/power_bank/intro_print_range_horizontal.png"],
         "color":[["black", "黑"]],
         "shell_color":[],
-        "size_text":["90 x 60 x 20 mm", "30 x 40 mm"]
+        "size_text":["130 x 70 x 12 mm", "30 x 40 mm"]
     }
 };
 
