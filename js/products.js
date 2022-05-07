@@ -62,86 +62,46 @@ function remove_style(element_list){
     }
 };
 
-function scroll_move(before, after){
-
-    if(after-before > 0){
-
-        if(after<219){
-            scroll_x_box.scrollLeft = 219;//199
-            remove_style(prods);
-            prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[1].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }else if(after<438){
-            scroll_x_box.scrollLeft = 438;//418
-            remove_style(prods);
-            prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[1].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[2].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }else if(after<657){
-            scroll_x_box.scrollLeft = 657;//637
-            remove_style(prods);
-            prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[1].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[2].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[3].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }
-
-    }else if(after-before < 0){
-
-        if(after>657){//610
-            scroll_x_box.scrollLeft = 657;           
-        }else if(after>438){
-            scroll_x_box.scrollLeft = 438;
-            remove_style(prods);
-            prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[1].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[2].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }else if(after>219){
-            scroll_x_box.scrollLeft = 219;
-            remove_style(prods);
-            prods[0].setAttribute("style", "transform: scale(0.8) perspective(1500px) rotateY(45deg);");
-            prods[1].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }else{
-            scroll_x_box.scrollLeft = 0;
-            remove_style(prods);
-            prods[0].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }
-
-    }
-
-    
-    return scroll_x_box.scrollLeft;
-};
-
-
 
 let scroll_x_next = document.getElementById("scroll_x_next");
 let scroll_x_prev = document.getElementById("scroll_x_prev");
 let scroll_index = 0;
+let scroll_interval_id;
+let win_width = window.innerWidth;
+
+
+function scroll_interval(interval_step){
+
+    let t = 0;
+
+    scroll_interval_id = setInterval(function(){
+            
+        scroll_x_box.scrollLeft += interval_step;
+        
+        t ++
+
+        // console.log(scroll_x_box.scrollLeft);
+
+        if(t === 11){
+            remove_style(prods);
+            clearInterval(scroll_interval_id);
+            scroll_index = Math.ceil(scroll_x_box.scrollLeft/220);
+            prods[scroll_index].setAttribute("style", "transform: scale(1); opacity: 1;");
+        }
+
+    }, 15);
+
+}
+
 
 scroll_x_next.addEventListener("click", e => {
     if(scroll_index !== (prods.length-2)){
-        remove_style(prods);
-        scroll_x_box.scrollLeft += 219;
-
-        scroll_index = Math.ceil(scroll_x_box.scrollLeft/219)+1;
-        //console.log(index);
-        prods[scroll_index].setAttribute("style", "transform: scale(1); opacity: 1;");
-        //console.log(scroll_x_box.scrollLeft);
+        scroll_interval(20);       
     }
 });
 
 scroll_x_prev.addEventListener("click", e => {
-    //console.log(scroll_index);
-
     if(scroll_index !== 0){
-    
-        remove_style(prods);
-        scroll_x_box.scrollLeft -= 219;
-
-        scroll_index = Math.ceil(scroll_x_box.scrollLeft/219) -1;
-        //console.log(scroll_x_box.scrollLeft);
-        //console.log(index);
-        prods[scroll_index].setAttribute("style", "transform: scale(1); opacity: 1;");
-        }
+        scroll_interval(-20);
+    }
 });

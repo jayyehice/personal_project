@@ -33,7 +33,7 @@
 
     main .products ul > div{
         display: flex;
-        scroll-behavior: smooth; 
+        /* scroll-behavior: smooth;  */
         overflow: hidden;
         transition: all 2s;
     }
