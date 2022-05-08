@@ -1,5 +1,5 @@
 
-旋轉碟 rota
+旋轉碟 usb
 鋁管碟 al
 迷你碟 mini
 小夜燈 night

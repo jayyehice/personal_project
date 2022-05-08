@@ -1,16 +1,14 @@
 
 
-let show_btn = document.getElementById("show_btn");
+
 let show_box = document.getElementById("show_box");
 let show_logo = document.getElementById("show_logo");
-
-// show_btn.addEventListener("click", function(){
-//     show_box.insertAdjacentHTML("beforeend", '<img id="show_logo" src="./img/customization-logo.png" alt="">');
-// });
+let show_logo_temp = document.getElementById("show_logo_temp");
 
 
 
 
+//-------------------------------示意圖 文字部分-------------------------------
 
 let input_word1 = document.getElementById("input_word1");
 let input_word2 = document.getElementById("input_word2");
@@ -31,10 +29,6 @@ let notReg = /\w{1}/g;
 
 
 let input_word_show_box_height = input_word_show_box.scrollHeight;
-// console.log(input_word_show_box_height*0.5);
-// console.log((input_word_show_box_height*0.22).toFixed(1));
-
-// font-size 0.22   interval 0.33   half 0.5
 
 let input_word_show_top = [
     (input_word_show_box_height*0.0545).toFixed(1) + 'px',
@@ -95,6 +89,9 @@ for(let i=0; i<3; i++){
 
 }
 
+
+//文字對齊
+
 let input_word_left1 = document.getElementById("input_word_left1");
 let input_word_center1 = document.getElementById("input_word_center1");
 let input_word_right1 = document.getElementById("input_word_right1");
@@ -152,7 +149,7 @@ for(let i=0; i<3; i++){
 
 
 
-
+//-------------------------------示意圖 圖片部分-------------------------------
 
 let show_logo_up = document.getElementById("show_logo_up");
 let show_logo_down = document.getElementById("show_logo_down");
@@ -169,12 +166,67 @@ let limit_offsetTop_t;
 let limit_offsetLeft_t;
 
 
+function removeImgBg(origin_img){
+              
+    const rgba = [255,255,255,255];
+    const tolerance = 10;
+
+    var imgData = null;
+    const [r0,g0,b0,a0] = rgba;
+    var r, g, b, a;
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    const w = origin_img.width;
+    const h = origin_img.height;
+
+    canvas.width = w;
+    canvas.height = h;
+    context.drawImage(origin_img, 0, 0, w, h);
+    
+    imgData = context.getImageData(0, 0, w, h);
+
+    for(let i=0; i<imgData.data.length; i+=4){
+        r = imgData.data[i];
+        g = imgData.data[i+1];
+        b = imgData.data[i+2];
+        a = imgData.data[i+3];
+
+        if(a != 0){
+
+            const t=Math.sqrt((r-r0)**2 + (g-g0)**2 + (b-b0)**2 + (a-a0)**2);
+
+            if (t<=tolerance){
+            for(let j=0; j<4; j++){
+                imgData.data[i+j] = 0;
+            }
+            }else{
+                // console.log(t);
+                for(let j=0; j<4; j++){
+                    imgData.data[i+j] = 255;
+                }
+            }
+        } 
+    }
+
+    context.putImageData(imgData, 0, 0);
+    const newBase64 = canvas.toDataURL();
+
+    return newBase64;
+}
+
+
+//上傳圖片
 file_upload.addEventListener("change", function(){
     
     let reader = new FileReader();
     reader.readAsDataURL(this.files[0]);
     reader.addEventListener("load", function(){
-        show_logo.src = this.result;
+        show_logo_temp.src = this.result;
+        //console.log(show_logo.width, show_logo.height);
+        setTimeout(function(){
+            show_logo.src = removeImgBg(show_logo_temp);
+        },100);
+        
     });
 
     show_logo_up.style.opacity = 1;
@@ -185,6 +237,7 @@ file_upload.addEventListener("change", function(){
     limit_offsetTop_t = 0;
     limit_offsetLeft_t = 0;
 
+    //回復初始值
     show_logo.removeAttribute("style")
 
 });
@@ -259,4 +312,48 @@ show_logo_right.addEventListener("click", function(){
             this.style.opacity = .5;
         }
     }
+});
+
+
+
+//-------------------------------送出/清除 輸入內容-------------------------------
+
+let send_btn = document.getElementById("send_btn");
+let clear_btn = document.getElementById("clear_btn");
+
+clear_btn.addEventListener("click", function(){
+
+    for(let i=0; i<input_word.length; i++){
+        input_word[i].value = "";
+        input_word[i].removeAttribute("style");
+        input_word_show[i].innerHTML="";
+        input_word_show[i].removeAttribute("style"); 
+    }
+
+    show_logo.src = "";
+
+});
+
+send_btn.addEventListener("click", function(){
+    let check1 = false;
+    let check2 = true;
+
+    for(let i=0; i<input_word.length; i++){
+        if(input_word[i].value != ""){
+            check1 = true;
+        }
+    }
+
+    if(show_logo.getAttribute("src").length == 0){
+        check2 = false;
+    }
+
+    // console.log(input_word[0].value);
+    
+    if( check1 || check2 ){
+        let r = confirm("確認送出圖稿?");
+    }else{
+        alert("請上傳圖檔或輸入文字後，再送出。\n謝謝!");
+    }
+    
 });

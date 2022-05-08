@@ -12,6 +12,8 @@ main .customization .wrapper850{
     justify-content: space-between;
     height: 500px;
     margin-top: 30px;
+
+    max-width: 850px;
 }
 
 #show_box{
@@ -41,6 +43,10 @@ main .customization .wrapper850{
     z-index: 1;
     max-height: 50px;
     
+}
+
+#show_box #show_logo_temp{
+    display: none;
 }
 
 #show_box #input_word_show_box{
@@ -74,7 +80,7 @@ main .customization .wrapper850{
 
 main .customization ul{
     /* border: 1px solid #000; */
-    width: 410px;
+    max-width: 410px;
     background-color: #fff;
 }
 
@@ -103,6 +109,10 @@ main .customization li > p:first-child{
     margin-right: 40px;
     /* border-bottom: 1px solid #000; */
     border-radius: 5px;
+}
+
+main .customization li > input{
+    margin-right: 20px;
 }
 
 main .customization li div{
