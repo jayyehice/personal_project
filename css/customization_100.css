@@ -13,11 +13,11 @@
     }
 
     main .customization ul {
-        max-width: 350px;
+        max-width: 70%;
     }
 
     main .customization li div{
-        width: 200px;
+        max-width: 200px;
     }
 
     main .customization li > p:first-child {
