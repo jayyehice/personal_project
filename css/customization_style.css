@@ -171,6 +171,11 @@ main .customization li i:hover{
     cursor: pointer;
 }
 
+#input_word1, #input_word2, #input_word3 {
+    max-width: 40%;
+}
+
+
 #show_logo_up,#show_logo_down,#show_logo_left,#show_logo_right{
     opacity: .5;
 }
@@ -182,6 +187,7 @@ main .customization li i:hover{
 #input_word_right1, #input_word_right2, #input_word_right3{
     opacity: .5;
 }
+
 
 main .customization li div span{
     margin-bottom: 10px;
